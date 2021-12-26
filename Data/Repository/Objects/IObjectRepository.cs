@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Object = webApp.Models.Object;
 
-namespace webApp.Data.Repository.Repo
+namespace webApp.Data.Repository.Objects
 {
     public interface IObjectRepository : IGenericRepository<Object>
     {

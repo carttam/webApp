@@ -3,7 +3,7 @@ using webApp.Manager;
 using Object = webApp.Models.Object;
 
 
-namespace webApp.Data.Repository.Repo
+namespace webApp.Data.Repository.Objects
 {
     public class ObjectRepository : GenericRepository<Object>, IObjectRepository
     {
@@ -11,11 +11,10 @@ namespace webApp.Data.Repository.Repo
         {
         }
 
-        public async ValueTask<EntityEntry<Object>> AddAsync(Object entity, IFormFile? file,
+        public async ValueTask<EntityEntry<Object>> AddAsync(Object entity, IFormFile file,
             IWebHostEnvironment Environment)
         {
-            if (file != null)
-                entity.image = FileManager.storeAs(file, FileManager.FileStorePAth.img, Environment);
+            entity.image = FileManager.storeAs(file, FileManager.FileStorePAth.img, Environment);
             return await base.AddAsync(entity);
         }
 

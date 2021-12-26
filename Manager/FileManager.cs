@@ -6,40 +6,45 @@
         {
             img,
         }
+
         public static string storeAs(IFormFile file, FileStorePAth fileStorePAth, IWebHostEnvironment Environment)
         {
-            if (file != null)
+            string path = "";
+            switch (fileStorePAth)
             {
-                string path = "";
-                switch (fileStorePAth)
-                {
-                    case FileStorePAth.img:
-                        path = Path.Combine(Environment.WebRootPath, "img");
-                        break;
-                }
-                if (!Directory.Exists(path))
-                {
-                    Directory.CreateDirectory(path);
-                }
-                string fileName = Path.GetFileName(file.FileName);
-                using (FileStream stream = new FileStream(Path.Combine(path, fileName), FileMode.Create ))
-                {
-                    file.CopyTo(stream);
-                }
-                return fileName;
+                case FileStorePAth.img:
+                    path = Path.Combine(Environment.WebRootPath, "img");
+                    break;
             }
-            return "";
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            string fileName = Path.GetFileName(file.FileName);
+            while (File.Exists(Path.Combine(path, fileName)))
+            {
+                fileName = fileName.Split(".")[0] + (new Random().Next(10000, 99999).ToString()) +
+                           fileName.Split(".")[1];
+            }
+
+            using (FileStream stream = new FileStream(Path.Combine(path, fileName), FileMode.Create))
+            {
+                file.CopyTo(stream);
+            }
+
+            return fileName;
         }
+
         public static void DeleteFile(string filename, FileStorePAth fileStorePAth, IWebHostEnvironment Environment)
         {
-            if (filename != null)
+            switch (fileStorePAth)
             {
-                switch (fileStorePAth)
-                {
-                    case FileStorePAth.img:
-                        System.IO.File.Delete(Path.Combine(Environment.WebRootPath, "img/" + filename));
-                        break;
-                }
+                case FileStorePAth.img:
+                    if (File.Exists(Path.Combine(Environment.WebRootPath, "img/" + filename)))
+                        System.IO.File.Delete(Path.Combine(Environment.WebRootPath, "img/" + filename!));
+                    break;
             }
         }
     }

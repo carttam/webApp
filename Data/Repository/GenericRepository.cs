@@ -12,27 +12,27 @@ namespace webApp.Data.Repository
             _context = context;
         }
 
-        public async ValueTask<EntityEntry<T>> AddAsync(T entity)
+        public virtual async ValueTask<EntityEntry<T>> AddAsync(T entity)
         {
             return await _context.Set<T>().AddAsync(entity);
         }
 
-        public async Task<List<T>> AllAsync()
+        public virtual async Task<List<T>> AllAsync()
         {
             return await _context.Set<T>().ToListAsync();
         }
 
-        public async Task<T> FindByIDAsync(int? id)
+        public virtual async Task<T> FindByIDAsync(int? id)
         {
             return await _context.Set<T>().FindAsync(id);
         }
 
-        public void Remove(T entity)
+        public virtual void Remove(T entity)
         {
             _context.Set<T>().Remove(entity);
         }
 
-        public void Update(T entity)
+        public virtual void Update(T entity)
         {
             _context.Set<T>().Update(entity);
         }
