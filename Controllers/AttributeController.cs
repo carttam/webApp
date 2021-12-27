@@ -1,18 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 using webApp.Data;
-using webApp.Models;
+using Attribute = webApp.Models.Attribute;
 
 namespace webApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class AttributeController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IWebHostEnvironment Environment;
-        private readonly ILogger<UserController> _logger;
+        private readonly ILogger<AttributeController> _logger;
 
-        public UserController(IUnitOfWork unitOfWork, IWebHostEnvironment environment, ILogger<UserController> logger)
+        public AttributeController(IUnitOfWork unitOfWork, IWebHostEnvironment environment,
+            ILogger<AttributeController> logger)
         {
             _unitOfWork = unitOfWork;
             Environment = environment;
@@ -20,19 +21,19 @@ namespace webApp.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<User>> Get()
+        public async Task<IEnumerable<Attribute>> Get()
         {
-            return await _unitOfWork.User.AllAsync();
+            return await _unitOfWork.Attribute.AllAsync();
         }
 
         [HttpGet("{id}")]
-        public async Task<User?> Get(int id)
+        public async Task<Attribute?> Get(int id)
         {
-            return await _unitOfWork.User.FindByIDAsync(id);
+            return await _unitOfWork.Attribute.FindByIDAsync(id);
         }
 
         [HttpPost]
-        public async Task<JsonResult> Post(User user)
+        public async Task<JsonResult> Post(Attribute attribute)
         {
             string message = "Bad Request .";
             int status = 400;
@@ -40,9 +41,9 @@ namespace webApp.Controllers
             {
                 try
                 {
-                    await _unitOfWork.User.AddAsync(user);
+                    await _unitOfWork.Attribute.AddAsync(attribute);
                     await _unitOfWork.SaveAsync();
-                    message = "User Create Successfully .";
+                    message = "Attribute Create Successfully .";
                     status = 200;
                 }
                 catch (Exception ex)
@@ -65,17 +66,17 @@ namespace webApp.Controllers
             int status = 400;
             try
             {
-                User? user = await _unitOfWork.User.FindByIDAsync(id) ?? null;
-                if (user != null)
+                Attribute? attribute = await _unitOfWork.Attribute.FindByIDAsync(id) ?? null;
+                if (attribute != null)
                 {
-                    _unitOfWork.User.Remove(user);
+                    _unitOfWork.Attribute.Remove(attribute);
                     await _unitOfWork.SaveAsync();
-                    message = "User Remove Successfully .";
+                    message = "Attribute Remove Successfully .";
                     status = 200;
                 }
                 else
                 {
-                    message = "User Dose not Exist .";
+                    message = "Attribute Dose not Exist .";
                 }
             }
             catch (Exception ex)
@@ -91,15 +92,15 @@ namespace webApp.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(User user, int id)
+        public async Task<IActionResult> Put(Attribute attribute, int id)
         {
-            if (user.UserID != id)
+            if (attribute.AttributeID != id)
             {
                 return new BadRequestResult();
             }
             try
             {
-                return await _unitOfWork.User.UpdateAsync(user, id);
+                return await _unitOfWork.Attribute.UpdateAsync(attribute, id);
             }
             catch (Exception ex)
             {
