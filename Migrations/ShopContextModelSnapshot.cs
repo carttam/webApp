@@ -274,6 +274,12 @@ namespace webApp.Migrations
 
                     b.HasKey("UserID");
 
+                    b.HasIndex("email")
+                        .IsUnique();
+
+                    b.HasIndex("username")
+                        .IsUnique();
+
                     b.ToTable("Users");
                 });
 

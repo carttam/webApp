@@ -1,7 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace webApp.Models
 {
+    [Index("username",IsUnique = true)]
+    [Index("email",IsUnique = true)]
     public class User
     {
         public int UserID { get; set; }

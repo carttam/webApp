@@ -25,11 +25,12 @@ namespace webApp.Data.Repository.Objects
             base.Remove(entity);
         }
 
-        public void Update(Object entity, IFormFile file, IWebHostEnvironment Environment)
+
+        public async void UpdateAsync(Object entity, int id, IFormFile file, IWebHostEnvironment Environment)
         {
             FileManager.DeleteFile(entity.image!, FileManager.FileStorePAth.img, Environment);
             entity.image = FileManager.storeAs(file, FileManager.FileStorePAth.img, Environment);
-            base.Update(entity);
+            await base.UpdateAsync(entity, id);
         }
     }
 }

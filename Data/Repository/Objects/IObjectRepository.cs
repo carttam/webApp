@@ -9,6 +9,6 @@ namespace webApp.Data.Repository.Objects
 
         public void Remove(Object entity, IWebHostEnvironment Environment);
 
-        public void Update(Object entity, IFormFile file, IWebHostEnvironment Environment);
+        public void UpdateAsync(Object entity, int id, IFormFile file, IWebHostEnvironment Environment);
     }
 }

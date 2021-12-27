@@ -1,4 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Linq.Expressions;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace webApp.Data.Repository
@@ -22,7 +25,7 @@ namespace webApp.Data.Repository
             return await _context.Set<T>().ToListAsync();
         }
 
-        public virtual async Task<T> FindByIDAsync(int? id)
+        public virtual async Task<T?> FindByIDAsync(int? id)
         {
             return await _context.Set<T>().FindAsync(id);
         }
@@ -32,9 +35,32 @@ namespace webApp.Data.Repository
             _context.Set<T>().Remove(entity);
         }
 
-        public virtual void Update(T entity)
+        public virtual async Task<IActionResult> UpdateAsync(T entity, int id)
         {
+            _context.Entry(entity).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (await FindByIDAsync(id) != null)
+                {
+                    return new NotFoundResult();
+                }
+                else
+                {
+                    throw new Exception("Some think Went Wrong Try again later .");
+                }
+            }
             _context.Set<T>().Update(entity);
+            return new OkResult();
+        }
+
+        public async Task<List<T>> Where([NotNull] Expression<Func<T,bool>> predicate)
+        {
+            return await _context.Set<T>().Where(predicate).ToListAsync();
         }
     }
 }
