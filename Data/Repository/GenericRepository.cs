@@ -37,7 +37,15 @@ namespace webApp.Data.Repository
 
         public virtual async Task<IActionResult> UpdateAsync(T entity, int id)
         {
-            _context.Entry(entity).State = EntityState.Modified;
+            try
+            {
+                _context.Entry(entity).State = EntityState.Modified;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
 
             try
             {

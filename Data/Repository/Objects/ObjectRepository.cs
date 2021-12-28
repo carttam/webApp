@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using webApp.Manager;
 using Object = webApp.Models.Object;
 
@@ -26,11 +28,11 @@ namespace webApp.Data.Repository.Objects
         }
 
 
-        public async void UpdateAsync(Object entity, int id, IFormFile file, IWebHostEnvironment Environment)
+        public async Task<IActionResult> UpdateAsync(Object entity, int id, IFormFile file, IWebHostEnvironment Environment)
         {
-            FileManager.DeleteFile(entity.image!, FileManager.FileStorePAth.img, Environment);
+            FileManager.DeleteFile((await this._context.Objects!.AsNoTracking().FirstOrDefaultAsync(o=>o.ObjectID == id))!.image!, FileManager.FileStorePAth.img, Environment);
             entity.image = FileManager.storeAs(file, FileManager.FileStorePAth.img, Environment);
-            await base.UpdateAsync(entity, id);
+            return await base.UpdateAsync(entity, id);
         }
     }
 }

@@ -13,7 +13,7 @@
             switch (fileStorePAth)
             {
                 case FileStorePAth.img:
-                    path = Path.Combine(Environment.WebRootPath, "img");
+                    path = Path.Combine(Environment.ContentRootPath, "img");
                     break;
             }
 
@@ -25,7 +25,7 @@
             string fileName = Path.GetFileName(file.FileName);
             while (File.Exists(Path.Combine(path, fileName)))
             {
-                fileName = fileName.Split(".")[0] + (new Random().Next(10000, 99999).ToString()) +
+                fileName = fileName.Split(".")[0] + (new Random().Next(10000, 99999).ToString()) + "." +
                            fileName.Split(".")[1];
             }
 
@@ -42,8 +42,8 @@
             switch (fileStorePAth)
             {
                 case FileStorePAth.img:
-                    if (File.Exists(Path.Combine(Environment.WebRootPath, "img/" + filename)))
-                        System.IO.File.Delete(Path.Combine(Environment.WebRootPath, "img/" + filename!));
+                    if (File.Exists(Path.Combine(Environment.ContentRootPath, "img/" + filename)))
+                        System.IO.File.Delete(Path.Combine(Environment.ContentRootPath, "img/" + filename!));
                     break;
             }
         }

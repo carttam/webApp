@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Object = webApp.Models.Object;
 
 namespace webApp.Data.Repository.Objects
@@ -9,6 +10,6 @@ namespace webApp.Data.Repository.Objects
 
         public void Remove(Object entity, IWebHostEnvironment Environment);
 
-        public void UpdateAsync(Object entity, int id, IFormFile file, IWebHostEnvironment Environment);
+        public Task<IActionResult> UpdateAsync(Object entity, int id, IFormFile file, IWebHostEnvironment Environment);
     }
 }

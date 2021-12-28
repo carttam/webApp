@@ -10,7 +10,6 @@ public class AttributeRepository : GenericRepository<Attribute> , IAttributeRepo
     }
     public override async ValueTask<EntityEntry<Attribute>> AddAsync(Attribute entity)
     {
-        entity.AttributeID = 0;
         if (entity.datas!.Split(",").Length == entity.titles!.Split(",").Length)
             return await base.AddAsync(entity);
         throw new Exception("Invalid Value for Attribute ...");

@@ -2,7 +2,7 @@
 {
     public class Sell
     {
-        public int SellID { get; set; }
+        public int SellID { get; private set; }
         public int? ObjectID { get; set; }
         public int? UserID { get; set; }
         public int? PaymentID { get; set; }
