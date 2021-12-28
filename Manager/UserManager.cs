@@ -35,25 +35,25 @@ namespace webApp.Manager
             return true;
         }
 
-        public static async Task<Token> loginAsync(User user, ShopContext _context)
-        {
-            Token savedToken = _context.Tokens.Where<Token>(token => token.User == user).FirstOrDefault();
-            if (savedToken != null)
-            {
-                _context.Remove<Token>(savedToken);
-                await _context.SaveChangesAsync();
-            }
-            string randomToken = "";
-            do
-            {
-                byte[] salt = new byte[32];
-                new RNGCryptoServiceProvider().GetBytes(salt);
-                randomToken = Convert.ToBase64String(salt);
-            } while (_context.Tokens.Where<Token>(t => t.token == randomToken).Any());
-            Token token = new Token() { token = randomToken, User = user, gen_dateTime = DateTime.Now, exp_dateTime = DateTime.Now.AddDays(7) };
-            _context.Add(token);
-            await _context.SaveChangesAsync();
-            return token;
-        }
+        // public static async Task<Token> loginAsync(User user, ShopContext _context)
+        // {
+        //     Token savedToken = _context.Tokens.Where<Token>(token => token.User == user).FirstOrDefault();
+        //     if (savedToken != null)
+        //     {
+        //         _context.Remove<Token>(savedToken);
+        //         await _context.SaveChangesAsync();
+        //     }
+        //     string randomToken = "";
+        //     do
+        //     {
+        //         byte[] salt = new byte[32];
+        //         new RNGCryptoServiceProvider().GetBytes(salt);
+        //         randomToken = Convert.ToBase64String(salt);
+        //     } while (_context.Tokens.Where<Token>(t => t.token == randomToken).Any());
+        //     Token token = new Token() { token = randomToken, User = user, gen_dateTime = DateTime.Now, exp_dateTime = DateTime.Now.AddDays(7) };
+        //     _context.Add(token);
+        //     await _context.SaveChangesAsync();
+        //     return token;
+        // }
     }
 }

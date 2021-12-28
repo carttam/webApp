@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 
 namespace webApp.Models
@@ -45,9 +46,9 @@ namespace webApp.Models
         [Required]
         [StringLength(256), MinLength(8), MaxLength(16)]
         public string? password { get; set; }
-
-        public virtual Token? token { get; set; }
-        public virtual ICollection<Payment>? Payments { get; set; }
-        public virtual ICollection<Sell>? Sells { get; set; }
+        
+        public virtual Token? token { get; private set; }
+        public virtual ICollection<Payment>? Payments { get; private set; }
+        public virtual ICollection<Sell>? Sells { get; private set; }
     }
 }
