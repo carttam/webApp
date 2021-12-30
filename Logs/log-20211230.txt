@@ -1,0 +1,255 @@
+2021-12-30T18:52:12.8375934+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2021-12-30T18:52:12.8623069+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2021-12-30T18:52:12.8912458+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-12-30T18:52:12.9243457+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-12-30T18:52:12.9385397+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2021-12-30T18:53:33.5869747+03:30 0HMEBL1BPBVSI:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T18:53:33.7594513+03:30 0HMEBL1BPBVSI:00000002 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T18:53:33.8244521+03:30 0HMEBL1BPBVSI:00000002 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T18:55:55.2433561+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2021-12-30T18:55:55.2852518+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2021-12-30T18:55:55.3171935+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-12-30T18:55:55.3470507+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-12-30T18:55:55.3589212+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2021-12-30T18:56:15.2256159+03:30 0HMEBL2RUS1OI:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T18:56:15.3748011+03:30 0HMEBL2RUS1OI:00000002 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T18:56:15.4256873+03:30 0HMEBL2RUS1OI:00000002 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:04:33.0525462+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2021-12-30T19:04:33.0678941+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2021-12-30T19:04:33.1078864+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-12-30T19:04:33.1234923+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-12-30T19:04:33.1322918+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2021-12-30T19:05:08.6078360+03:30 0HMEBL7QTLQNA:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:05:08.7478228+03:30 0HMEBL7QTLQNA:00000002 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:05:08.7987091+03:30 0HMEBL7QTLQNA:00000002 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:05:48.2009897+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2021-12-30T19:05:48.2318338+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2021-12-30T19:05:48.2600782+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-12-30T19:05:48.2685924+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-12-30T19:05:48.3019876+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2021-12-30T19:09:14.8668339+03:30 0HMEBLA4A7D80:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:09:15.1107777+03:30 0HMEBLA4A7D80:00000002 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:09:15.1747471+03:30 0HMEBLA4A7D80:00000002 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:11:26.8421399+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2021-12-30T19:11:26.8543816+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2021-12-30T19:11:26.8758061+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-12-30T19:11:26.8805867+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-12-30T19:11:26.8897446+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2021-12-30T19:11:33.9151678+03:30 0HMEBLBDO6GNO:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:11:34.0488925+03:30 0HMEBLBDO6GNO:00000002 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:11:34.0974034+03:30 0HMEBLBDO6GNO:00000002 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:19:44.5773487+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2021-12-30T19:19:44.5850258+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2021-12-30T19:19:44.6011121+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-12-30T19:19:44.6018934+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-12-30T19:19:44.6019654+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2021-12-30T19:19:51.3916309+03:30 0HMEBLG20IGQJ:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:19:51.4977638+03:30 0HMEBLG20IGQJ:00000002 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:19:51.5563679+03:30 0HMEBLG20IGQJ:00000002 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:19:51.7965079+03:30 0HMEBLG20IGQJ:00000002 [INF] token = "Pjg2HycFH57IXTC9B5jXa3S/21hYG0LO8FNmlfxRu8k=" (1faef91e)
+2021-12-30T19:19:53.4030658+03:30 0HMEBLG20IGQJ:00000002 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2021-12-30T19:19:54.4648773+03:30 0HMEBLG20IGQJ:00000002 [INF] Executed DbCommand ("62"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:19:54.7214741+03:30 0HMEBLG20IGQJ:00000002 [INF] Executing "ObjectResult", writing value of type '"webApp.Models.User"'. (605b4265)
+2021-12-30T19:19:54.8024879+03:30 0HMEBLG20IGQJ:00000002 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 3233.2972ms (afa2e885)
+2021-12-30T19:19:54.8026843+03:30 0HMEBLG20IGQJ:00000002 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:19:54.8149632+03:30 0HMEBLG20IGQJ:00000002 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 200 - application/json;+charset=utf-8 3429.8869ms (791a596a)
+2021-12-30T19:21:01.3917270+03:30 0HMEBLG20IGQJ:00000003 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:21:01.3937252+03:30 0HMEBLG20IGQJ:00000003 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:21:01.4023114+03:30 0HMEBLG20IGQJ:00000003 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:21:01.4204050+03:30 0HMEBLG20IGQJ:00000003 [INF] Authorization failed for the request at filter '"webApp.OAuth.LoginRequire"'. (8b6446cb)
+2021-12-30T19:21:01.4234809+03:30 0HMEBLG20IGQJ:00000003 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType12`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2021-12-30T19:21:01.4289686+03:30 0HMEBLG20IGQJ:00000003 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 26.4505ms (afa2e885)
+2021-12-30T19:21:01.4291873+03:30 0HMEBLG20IGQJ:00000003 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:21:01.4297036+03:30 0HMEBLG20IGQJ:00000003 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 405 - application/json;+charset=utf-8 38.0299ms (791a596a)
+2021-12-30T19:22:44.3042217+03:30  [INF] Application is shutting down... (90f52c38)
+2021-12-30T19:22:53.6673878+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2021-12-30T19:22:53.6814208+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2021-12-30T19:22:53.7098065+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-12-30T19:22:53.7117092+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-12-30T19:22:53.7119477+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2021-12-30T19:23:00.0878663+03:30 0HMEBLHQ8EI5I:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:23:00.1956626+03:30 0HMEBLHQ8EI5I:00000002 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:23:00.2565692+03:30 0HMEBLHQ8EI5I:00000002 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:23:00.5083448+03:30 0HMEBLHQ8EI5I:00000002 [INF] Authorization failed for the request at filter '"webApp.OAuth.LoginRequire"'. (8b6446cb)
+2021-12-30T19:23:00.5118756+03:30 0HMEBLHQ8EI5I:00000002 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType12`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2021-12-30T19:23:00.5587805+03:30 0HMEBLHQ8EI5I:00000002 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 287.5734ms (afa2e885)
+2021-12-30T19:23:00.5590368+03:30 0HMEBLHQ8EI5I:00000002 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:23:00.5669175+03:30 0HMEBLHQ8EI5I:00000002 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 405 - application/json;+charset=utf-8 484.6340ms (791a596a)
+2021-12-30T19:23:05.7569777+03:30 0HMEBLHQ8EI5I:00000003 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:23:05.7602331+03:30 0HMEBLHQ8EI5I:00000003 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:23:05.7617753+03:30 0HMEBLHQ8EI5I:00000003 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:23:07.4120221+03:30 0HMEBLHQ8EI5I:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2021-12-30T19:23:08.2696667+03:30 0HMEBLHQ8EI5I:00000003 [INF] Executed DbCommand ("30"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:23:08.5422187+03:30 0HMEBLHQ8EI5I:00000003 [INF] token = "Pjg2HycFH57IXTC9B5jXa3S/21hYG0LO8FNmlfxRu8k=" (1faef91e)
+2021-12-30T19:23:08.5483193+03:30 0HMEBLHQ8EI5I:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:23:08.5616575+03:30 0HMEBLHQ8EI5I:00000003 [INF] Executing "ObjectResult", writing value of type '"webApp.Models.User"'. (605b4265)
+2021-12-30T19:23:08.6111212+03:30 0HMEBLHQ8EI5I:00000003 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 2849.1973ms (afa2e885)
+2021-12-30T19:23:08.6113178+03:30 0HMEBLHQ8EI5I:00000003 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:23:08.6200813+03:30 0HMEBLHQ8EI5I:00000003 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 200 - application/json;+charset=utf-8 2862.9952ms (791a596a)
+2021-12-30T19:23:12.3862473+03:30 0HMEBLHQ8EI5I:00000004 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:23:12.3876160+03:30 0HMEBLHQ8EI5I:00000004 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:23:12.3878313+03:30 0HMEBLHQ8EI5I:00000004 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:23:12.3942898+03:30 0HMEBLHQ8EI5I:00000004 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2021-12-30T19:23:12.3979824+03:30 0HMEBLHQ8EI5I:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__token_0='?' (Size = 45)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:23:12.4042873+03:30 0HMEBLHQ8EI5I:00000004 [INF] token = "Pjg2HycFH57IXTC9B5jXa3S/21hYG0LO8FNmlfxRu8k=1" (1faef91e)
+2021-12-30T19:23:12.4058607+03:30 0HMEBLHQ8EI5I:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__token_0='?' (Size = 45)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:23:12.4067247+03:30 0HMEBLHQ8EI5I:00000004 [INF] Executing "ObjectResult", writing value of type '"null"'. (605b4265)
+2021-12-30T19:23:12.4070954+03:30 0HMEBLHQ8EI5I:00000004 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 19.1823ms (afa2e885)
+2021-12-30T19:23:12.4071507+03:30 0HMEBLHQ8EI5I:00000004 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:23:12.4077322+03:30 0HMEBLHQ8EI5I:00000004 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 204 0 - 21.4800ms (791a596a)
+2021-12-30T19:23:49.8920348+03:30 0HMEBLHQ8EI5I:00000005 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:23:49.8922085+03:30 0HMEBLHQ8EI5I:00000005 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:23:49.8923261+03:30 0HMEBLHQ8EI5I:00000005 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:23:50.0076142+03:30 0HMEBLHQ8EI5I:00000005 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2021-12-30T19:23:50.0104977+03:30 0HMEBLHQ8EI5I:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:23:50.0123521+03:30 0HMEBLHQ8EI5I:00000005 [INF] token = "Pjg2HycFH57IXTC9B5jXa3S/21hYG0LO8FNmlfxRu8k=" (1faef91e)
+2021-12-30T19:23:50.0132841+03:30 0HMEBLHQ8EI5I:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:23:50.0138073+03:30 0HMEBLHQ8EI5I:00000005 [INF] Executing "ObjectResult", writing value of type '"webApp.Models.User"'. (605b4265)
+2021-12-30T19:23:50.0143392+03:30 0HMEBLHQ8EI5I:00000005 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 121.9285ms (afa2e885)
+2021-12-30T19:23:50.0144116+03:30 0HMEBLHQ8EI5I:00000005 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:23:50.0146215+03:30 0HMEBLHQ8EI5I:00000005 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 200 - application/json;+charset=utf-8 122.6794ms (791a596a)
+2021-12-30T19:23:54.1142315+03:30 0HMEBLHQ8EI5I:00000006 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:23:54.1144875+03:30 0HMEBLHQ8EI5I:00000006 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:23:54.1146237+03:30 0HMEBLHQ8EI5I:00000006 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:23:54.1151613+03:30 0HMEBLHQ8EI5I:00000006 [INF] Authorization failed for the request at filter '"webApp.OAuth.LoginRequire"'. (8b6446cb)
+2021-12-30T19:23:54.1154165+03:30 0HMEBLHQ8EI5I:00000006 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType12`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2021-12-30T19:23:54.1157788+03:30 0HMEBLHQ8EI5I:00000006 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 1.0525ms (afa2e885)
+2021-12-30T19:23:54.1163301+03:30 0HMEBLHQ8EI5I:00000006 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:23:54.1170423+03:30 0HMEBLHQ8EI5I:00000006 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 405 - application/json;+charset=utf-8 2.7363ms (791a596a)
+2021-12-30T19:23:58.9381267+03:30 0HMEBLHQ8EI5I:00000007 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:23:58.9386179+03:30 0HMEBLHQ8EI5I:00000007 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:23:58.9387725+03:30 0HMEBLHQ8EI5I:00000007 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:23:58.9402240+03:30 0HMEBLHQ8EI5I:00000007 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2021-12-30T19:23:58.9415725+03:30 0HMEBLHQ8EI5I:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__token_0='?' (Size = 45)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:23:58.9422548+03:30 0HMEBLHQ8EI5I:00000007 [INF] token = "Pjg2HycFH57IXTC9B5jXa3S/21hYG0LO8FNmlfxRu8k=3" (1faef91e)
+2021-12-30T19:23:58.9436702+03:30 0HMEBLHQ8EI5I:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__token_0='?' (Size = 45)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:23:58.9440778+03:30 0HMEBLHQ8EI5I:00000007 [INF] Executing "ObjectResult", writing value of type '"null"'. (605b4265)
+2021-12-30T19:23:58.9442171+03:30 0HMEBLHQ8EI5I:00000007 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 5.3955ms (afa2e885)
+2021-12-30T19:23:58.9442492+03:30 0HMEBLHQ8EI5I:00000007 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:23:58.9444975+03:30 0HMEBLHQ8EI5I:00000007 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 204 0 - 6.3761ms (791a596a)
+2021-12-30T19:24:50.7984241+03:30  [INF] Application is shutting down... (90f52c38)
+2021-12-30T19:26:46.1773686+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2021-12-30T19:26:46.1868023+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2021-12-30T19:26:46.1984542+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-12-30T19:26:46.1991424+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-12-30T19:26:46.1992138+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2021-12-30T19:26:51.8787636+03:30 0HMEBLJVAK933:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:26:51.9941566+03:30 0HMEBLJVAK933:00000002 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:26:52.0742988+03:30 0HMEBLJVAK933:00000002 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:26:54.0967922+03:30 0HMEBLJVAK933:00000002 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2021-12-30T19:26:55.0739689+03:30 0HMEBLJVAK933:00000002 [INF] Executed DbCommand ("34"ms) [Parameters=["@__token_0='?' (Size = 45)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:26:55.1066480+03:30 0HMEBLJVAK933:00000002 [INF] Authorization failed for the request at filter '"webApp.OAuth.LoginRequire"'. (8b6446cb)
+2021-12-30T19:26:55.1112694+03:30 0HMEBLJVAK933:00000002 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType12`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2021-12-30T19:26:55.1615701+03:30 0HMEBLJVAK933:00000002 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 3074.57ms (afa2e885)
+2021-12-30T19:26:55.1617926+03:30 0HMEBLJVAK933:00000002 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:26:55.1733663+03:30 0HMEBLJVAK933:00000002 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 405 - application/json;+charset=utf-8 3301.2765ms (791a596a)
+2021-12-30T19:27:02.1665882+03:30 0HMEBLJVAK933:00000003 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:27:02.1737975+03:30 0HMEBLJVAK933:00000003 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:27:02.1749369+03:30 0HMEBLJVAK933:00000003 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:27:02.1893827+03:30 0HMEBLJVAK933:00000003 [INF] Authorization failed for the request at filter '"webApp.OAuth.LoginRequire"'. (8b6446cb)
+2021-12-30T19:27:02.1903962+03:30 0HMEBLJVAK933:00000003 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType12`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2021-12-30T19:27:02.1920408+03:30 0HMEBLJVAK933:00000003 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 16.424ms (afa2e885)
+2021-12-30T19:27:02.1929664+03:30 0HMEBLJVAK933:00000003 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:27:02.1936653+03:30 0HMEBLJVAK933:00000003 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 405 - application/json;+charset=utf-8 27.0394ms (791a596a)
+2021-12-30T19:27:04.3420947+03:30 0HMEBLJVAK933:00000004 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:27:04.3433567+03:30 0HMEBLJVAK933:00000004 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:27:04.3435557+03:30 0HMEBLJVAK933:00000004 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:27:04.3541167+03:30 0HMEBLJVAK933:00000004 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2021-12-30T19:27:04.3648689+03:30 0HMEBLJVAK933:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__token_0='?' (Size = 45)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:27:04.3663497+03:30 0HMEBLJVAK933:00000004 [INF] Authorization failed for the request at filter '"webApp.OAuth.LoginRequire"'. (8b6446cb)
+2021-12-30T19:27:04.3670568+03:30 0HMEBLJVAK933:00000004 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType12`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2021-12-30T19:27:04.3680964+03:30 0HMEBLJVAK933:00000004 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 24.4541ms (afa2e885)
+2021-12-30T19:27:04.3683176+03:30 0HMEBLJVAK933:00000004 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:27:04.3693983+03:30 0HMEBLJVAK933:00000004 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 405 - application/json;+charset=utf-8 27.2605ms (791a596a)
+2021-12-30T19:27:08.1089501+03:30 0HMEBLJVAK933:00000005 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:27:08.1092813+03:30 0HMEBLJVAK933:00000005 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:27:08.1094383+03:30 0HMEBLJVAK933:00000005 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:27:08.2376038+03:30 0HMEBLJVAK933:00000005 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2021-12-30T19:27:08.2417785+03:30 0HMEBLJVAK933:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__token_0='?' (Size = 43)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:27:08.2421096+03:30 0HMEBLJVAK933:00000005 [INF] Authorization failed for the request at filter '"webApp.OAuth.LoginRequire"'. (8b6446cb)
+2021-12-30T19:27:08.2421914+03:30 0HMEBLJVAK933:00000005 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType12`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2021-12-30T19:27:08.2450612+03:30 0HMEBLJVAK933:00000005 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 135.5369ms (afa2e885)
+2021-12-30T19:27:08.2451633+03:30 0HMEBLJVAK933:00000005 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:27:08.2454134+03:30 0HMEBLJVAK933:00000005 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 405 - application/json;+charset=utf-8 136.5634ms (791a596a)
+2021-12-30T19:27:10.2883140+03:30 0HMEBLJVAK933:00000006 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 (ca22a1cb)
+2021-12-30T19:27:10.2885152+03:30 0HMEBLJVAK933:00000006 [INF] Executing endpoint '"webApp.Controllers.UserController.Post (webApp)"' (500cc934)
+2021-12-30T19:27:10.2886462+03:30 0HMEBLJVAK933:00000006 [INF] Route matched with "{action = \"Post\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.User] Post(System.String)" on controller "webApp.Controllers.UserController" ("webApp"). (122b2fdf)
+2021-12-30T19:27:10.2898396+03:30 0HMEBLJVAK933:00000006 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2021-12-30T19:27:10.2908996+03:30 0HMEBLJVAK933:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:27:10.5453048+03:30 0HMEBLJVAK933:00000006 [INF] token = "Pjg2HycFH57IXTC9B5jXa3S/21hYG0LO8FNmlfxRu8k=" (1faef91e)
+2021-12-30T19:27:10.5464050+03:30 0HMEBLJVAK933:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2021-12-30T19:27:10.5630658+03:30 0HMEBLJVAK933:00000006 [INF] Executing "ObjectResult", writing value of type '"webApp.Models.User"'. (605b4265)
+2021-12-30T19:27:10.6088694+03:30 0HMEBLJVAK933:00000006 [INF] Executed action "webApp.Controllers.UserController.Post (webApp)" in 320.1493ms (afa2e885)
+2021-12-30T19:27:10.6090481+03:30 0HMEBLJVAK933:00000006 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
+2021-12-30T19:27:10.6097760+03:30 0HMEBLJVAK933:00000006 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 200 - application/json;+charset=utf-8 321.4947ms (791a596a)
+2021-12-30T19:27:18.3574050+03:30  [INF] Application is shutting down... (90f52c38)

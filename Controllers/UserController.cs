@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using webApp.Data;
+using webApp.Manager;
 using webApp.Models;
+using webApp.OAuth;
+using webApp.Request;
 
 namespace webApp.Controllers
 {
@@ -25,10 +28,39 @@ namespace webApp.Controllers
             return await _unitOfWork.User.AllAsync();
         }
 
-        [HttpGet("{id}")]
-        public async Task<User?> Get(int id)
+        [HttpPost("GetInfo")]
+        [LoginRequire]
+        public async Task<User?> Post([FromHeader]string token)
         {
-            return await _unitOfWork.User.FindByIDAsync(id);
+            return (await _unitOfWork.Token.FirstOrDefaultAsync(t => t.token == token))?.User;
+        }
+
+        [HttpPost("Login")]
+        public async Task<JsonResult> Post(LoginRequest request)
+        {
+            string message = "Bad Request .";
+            int status = 400;
+            Token? token = null;
+            try
+            {
+                token = await UserManager.loginAsync(request.username, request.password, _unitOfWork);
+                if (token != null)
+                    message = "Login Successfully .";
+                else
+                    message = "Username Or Password is Wrong .";
+                status = 200;
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+            }
+
+            return new JsonResult(new
+            {
+                status = status,
+                message = message,
+                token = token?.token
+            });
         }
 
         [HttpPost]
@@ -40,6 +72,7 @@ namespace webApp.Controllers
             {
                 try
                 {
+                    user.password = UserManager.makeHashPassword(user.password);
                     await _unitOfWork.User.AddAsync(user);
                     await _unitOfWork.SaveAsync();
                     message = "User Create Successfully .";
@@ -50,7 +83,7 @@ namespace webApp.Controllers
                     message = ex.Message;
                 }
             }
-
+        
             return new JsonResult(new
             {
                 status = status,
@@ -97,6 +130,7 @@ namespace webApp.Controllers
             {
                 return new BadRequestResult();
             }
+
             try
             {
                 return await _unitOfWork.User.UpdateAsync(user, id);

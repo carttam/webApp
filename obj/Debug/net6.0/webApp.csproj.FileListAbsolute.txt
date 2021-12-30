@@ -51,3 +51,10 @@
 /run/media/nop/F83652F73652B5FA/Projects/webApp/obj/Debug/net6.0/webApp.genruntimeconfig.cache
 /run/media/nop/F83652F73652B5FA/Projects/webApp/bin/Debug/net6.0/Humanizer.dll
 /run/media/nop/F83652F73652B5FA/Projects/webApp/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/run/media/nop/F83652F73652B5FA/Projects/webApp/bin/Debug/net6.0/Serilog.dll
+/run/media/nop/F83652F73652B5FA/Projects/webApp/bin/Debug/net6.0/Serilog.Extensions.Logging.dll
+/run/media/nop/F83652F73652B5FA/Projects/webApp/bin/Debug/net6.0/Serilog.Extensions.Logging.File.dll
+/run/media/nop/F83652F73652B5FA/Projects/webApp/bin/Debug/net6.0/Serilog.Formatting.Compact.dll
+/run/media/nop/F83652F73652B5FA/Projects/webApp/bin/Debug/net6.0/Serilog.Sinks.Async.dll
+/run/media/nop/F83652F73652B5FA/Projects/webApp/bin/Debug/net6.0/Serilog.Sinks.File.dll
+/run/media/nop/F83652F73652B5FA/Projects/webApp/bin/Debug/net6.0/Serilog.Sinks.RollingFile.dll

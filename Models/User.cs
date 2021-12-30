@@ -19,6 +19,7 @@ namespace webApp.Models
         [RegularExpression(
             @"^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?",
             ErrorMessage = "Not a valid email address")]
+        [Required]
         public string? email { get; set; }
 
         [DataType(DataType.Text)]
