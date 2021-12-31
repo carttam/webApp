@@ -2,20 +2,25 @@ using System.Net;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using webApp.Controllers;
 using webApp.Data;
+using webApp.Models;
 
 namespace webApp.OAuth;
 
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = true, Inherited = true)]
-public class LoginRequire : Attribute, IAuthorizationFilter
+public class LoginRequire : System.Attribute, IAuthorizationFilter
 {
     public async void OnAuthorization(AuthorizationFilterContext context)
     {
         Microsoft.Extensions.Primitives.StringValues token = "";
         context.HttpContext.Request.Headers.TryGetValue("token", out token);
-        if (await isValidToken(token.FirstOrDefault(),
-                context.HttpContext.RequestServices.GetService(typeof(IUnitOfWork)) as IUnitOfWork))
+        var controller = context.HttpContext.RequestServices.GetService(typeof(ControllerBase));
+        User? user = await isValidToken(token.FirstOrDefault(),
+            context.HttpContext.RequestServices.GetService(typeof(IUnitOfWork)) as IUnitOfWork);
+        if (user != null)
         {
+            context.HttpContext.Items.Add("User",user);
             return;
         }
         else
@@ -34,15 +39,16 @@ public class LoginRequire : Attribute, IAuthorizationFilter
         }
     }
 
-    private async Task<bool> isValidToken(string? token, IUnitOfWork? unitOfWork)
+    private async Task<User?> isValidToken(string? token, IUnitOfWork? unitOfWork)
     {
         if (token != null && unitOfWork != null)
         {
-            if ((await unitOfWork.Token.FirstOrDefaultAsync(t=>t.token == token)) != null)
+            Token? tkn = await unitOfWork.Token.FirstOrDefaultAsync(t=>t.token == token);
+            if (tkn != null)
             {
-                return true;
+                return tkn.User;
             }
         }
-        return false;
+        return null;
     }
 }

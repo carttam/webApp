@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Mvc;
 using webApp.Data;
 using webApp.Manager;
@@ -14,6 +15,7 @@ namespace webApp.Controllers
         private readonly IUnitOfWork _unitOfWork;
         private readonly IWebHostEnvironment Environment;
         private readonly ILogger<UserController> _logger;
+        public static User user = new User() {first_name = "alakieeee"};
 
         public UserController(IUnitOfWork unitOfWork, IWebHostEnvironment environment, ILogger<UserController> logger)
         {
@@ -30,9 +32,9 @@ namespace webApp.Controllers
 
         [HttpPost("GetInfo")]
         [LoginRequire]
-        public async Task<User?> Post([FromHeader]string token)
+        public User Post([FromHeader] string token)
         {
-            return (await _unitOfWork.Token.FirstOrDefaultAsync(t => t.token == token))?.User;
+            return this.HttpContext.Items["User"] as User ?? throw new InvalidOperationException();
         }
 
         [HttpPost("Login")]
@@ -54,7 +56,7 @@ namespace webApp.Controllers
             {
                 message = ex.Message;
             }
-
+        
             return new JsonResult(new
             {
                 status = status,
@@ -62,7 +64,7 @@ namespace webApp.Controllers
                 token = token?.token
             });
         }
-
+        
         [HttpPost]
         public async Task<JsonResult> Post(User user)
         {
