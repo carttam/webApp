@@ -21,18 +21,21 @@ namespace webApp.Controllers
             _logger = logger;
         }
 
+        // Get All Objects /api/[controller] GET
         [HttpGet]
         public async Task<IEnumerable<Object>> Get()
         {
             return await _unitOfWork.Object.AllAsync();
         }
 
+        // Get Single Object /api/[controller]/{id} GET
         [HttpGet("{id}")]
         public async Task<Object?> Get(int id)
         {
             return await _unitOfWork.Object.FindByIDAsync(id);
         }
 
+        // Insert Object /api/[controller]/(File) POST
         [HttpPost]
         public async Task<JsonResult> Post([FromForm] Object Object, IFormFile file)
         {
@@ -60,6 +63,7 @@ namespace webApp.Controllers
             });
         }
 
+        // Delete Object /api/[controller]/{id} DELETE
         [HttpDelete("{id}")]
         public async Task<JsonResult> Delete(int id)
         {
@@ -92,6 +96,7 @@ namespace webApp.Controllers
             });
         }
 
+        // Update Object /api/[controller]/{id} PUT
         [HttpPut("{id}")]
         public async Task<IActionResult> Put([FromForm] Object Object, int id, IFormFile file)
         {

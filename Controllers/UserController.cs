@@ -29,7 +29,7 @@ namespace webApp.Controllers
             return await _unitOfWork.User.AllAsync();
         }
 
-        // Get Single User By Token /api/[controller]/GetInfo POST
+        // Get Single User With Token /api/[controller]/GetInfo POST
         [HttpPost("GetInfo")]
         [LoginRequire]
         public User Post()
@@ -95,7 +95,7 @@ namespace webApp.Controllers
             });
         }
 
-        // Delete User By Id /api/[controller]/{id} DELETE
+        // Delete User /api/[controller]/{id} DELETE
         [HttpDelete("{id}")]
         [LoginRequire]
         public async Task<JsonResult> Delete(int id)
@@ -129,7 +129,7 @@ namespace webApp.Controllers
             });
         }
 
-        // Update User By id /api/[controller]/{id} PUT
+        // Update User /api/[controller]/{id} PUT
         [HttpPut("{id}")]
         [LoginRequire]
         public async Task<IActionResult> Put(User user, int id)
