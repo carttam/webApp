@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Mvc;
 using webApp.Data;
 using webApp.Manager;
@@ -15,7 +14,6 @@ namespace webApp.Controllers
         private readonly IUnitOfWork _unitOfWork;
         private readonly IWebHostEnvironment Environment;
         private readonly ILogger<UserController> _logger;
-        public static User user = new User() {first_name = "alakieeee"};
 
         public UserController(IUnitOfWork unitOfWork, IWebHostEnvironment environment, ILogger<UserController> logger)
         {
@@ -24,19 +22,22 @@ namespace webApp.Controllers
             _logger = logger;
         }
 
+        // Get All Users /api/[controller] GET
         [HttpGet]
         public async Task<IEnumerable<User>> Get()
         {
             return await _unitOfWork.User.AllAsync();
         }
 
+        // Get Single User By Token /api/[controller]/GetInfo POST
         [HttpPost("GetInfo")]
         [LoginRequire]
-        public User Post([FromHeader] string token)
+        public User Post()
         {
             return this.HttpContext.Items["User"] as User ?? throw new InvalidOperationException();
         }
 
+        // Login User /api/[controller]/Login POST
         [HttpPost("Login")]
         public async Task<JsonResult> Post(LoginRequest request)
         {
@@ -65,6 +66,7 @@ namespace webApp.Controllers
             });
         }
         
+        // Create User /api/[controller] POST
         [HttpPost]
         public async Task<JsonResult> Post(User user)
         {
@@ -93,7 +95,9 @@ namespace webApp.Controllers
             });
         }
 
+        // Delete User By Id /api/[controller]/{id} DELETE
         [HttpDelete("{id}")]
+        [LoginRequire]
         public async Task<JsonResult> Delete(int id)
         {
             string message = "Bad Request .";
@@ -125,7 +129,9 @@ namespace webApp.Controllers
             });
         }
 
+        // Update User By id /api/[controller]/{id} PUT
         [HttpPut("{id}")]
+        [LoginRequire]
         public async Task<IActionResult> Put(User user, int id)
         {
             if (user.UserID != id)
