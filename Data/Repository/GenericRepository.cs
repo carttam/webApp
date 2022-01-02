@@ -66,7 +66,7 @@ namespace webApp.Data.Repository
             return new OkResult();
         }
 
-        public virtual async Task<List<T>> Where([NotNull] Expression<Func<T,bool>> predicate)
+        public virtual async Task<List<T>> WhereAsync([NotNull] Expression<Func<T,bool>> predicate)
         {
             return await _context.Set<T>().Where(predicate).ToListAsync();
         }

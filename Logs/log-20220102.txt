@@ -55,3 +55,166 @@ LIMIT 1" (0723d8ff)
 2022-01-02T02:28:45.3345257+03:30 0HMEDF8RAO8SF:00000005 [INF] Executed endpoint '"webApp.Controllers.UserController.Post (webApp)"' (99874f2b)
 2022-01-02T02:28:45.3347740+03:30 0HMEDF8RAO8SF:00000005 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/user/getInfo - 0 - 200 - application/json;+charset=utf-8 162.8138ms (791a596a)
 2022-01-02T02:28:49.5776087+03:30  [INF] Application is shutting down... (90f52c38)
+2022-01-02T02:45:35.7313520+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-02T02:45:35.7731797+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-02T02:45:35.7965109+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-02T02:45:35.8042147+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-02T02:45:35.8108322+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2022-01-02T02:45:49.3444482+03:30 0HMEDFIISD1L1:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Discount - 0 (ca22a1cb)
+2022-01-02T02:45:49.5930562+03:30 0HMEDFIISD1L1:00000002 [INF] Executing endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (500cc934)
+2022-01-02T02:45:49.6916420+03:30 0HMEDFIISD1L1:00000002 [INF] Route matched with "{action = \"Post\", controller = \"Discount\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.DisCountCode] Post(System.Text.Json.Nodes.JsonObject)" on controller "webApp.Controllers.DiscountController" ("webApp"). (122b2fdf)
+2022-01-02T02:45:50.2394233+03:30 0HMEDFIISD1L1:00000002 [INF] Authorization failed for the request at filter '"webApp.OAuth.LoginRequire"'. (8b6446cb)
+2022-01-02T02:45:50.2468508+03:30 0HMEDFIISD1L1:00000002 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType12`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2022-01-02T02:45:50.4023232+03:30 0HMEDFIISD1L1:00000002 [INF] Executed action "webApp.Controllers.DiscountController.Post (webApp)" in 680.4608ms (afa2e885)
+2022-01-02T02:45:50.4025768+03:30 0HMEDFIISD1L1:00000002 [INF] Executed endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (99874f2b)
+2022-01-02T02:45:50.4174064+03:30 0HMEDFIISD1L1:00000002 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/Discount - 0 - 405 - application/json;+charset=utf-8 1081.3652ms (791a596a)
+2022-01-02T02:45:55.9617032+03:30 0HMEDFIISD1L1:00000003 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Discount - 0 (ca22a1cb)
+2022-01-02T02:45:55.9641900+03:30 0HMEDFIISD1L1:00000003 [INF] Executing endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (500cc934)
+2022-01-02T02:45:55.9647401+03:30 0HMEDFIISD1L1:00000003 [INF] Route matched with "{action = \"Post\", controller = \"Discount\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.DisCountCode] Post(System.Text.Json.Nodes.JsonObject)" on controller "webApp.Controllers.DiscountController" ("webApp"). (122b2fdf)
+2022-01-02T02:45:58.9147080+03:30 0HMEDFIISD1L1:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-02T02:46:00.9048208+03:30 0HMEDFIISD1L1:00000003 [INF] Executed DbCommand ("74"ms) [Parameters=["@__token_0='?' (Size = 45)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2022-01-02T02:46:00.9715246+03:30 0HMEDFIISD1L1:00000003 [INF] Authorization failed for the request at filter '"webApp.OAuth.LoginRequire"'. (8b6446cb)
+2022-01-02T02:46:00.9722070+03:30 0HMEDFIISD1L1:00000003 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType12`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2022-01-02T02:46:00.9733216+03:30 0HMEDFIISD1L1:00000003 [INF] Executed action "webApp.Controllers.DiscountController.Post (webApp)" in 5008.369ms (afa2e885)
+2022-01-02T02:46:00.9734298+03:30 0HMEDFIISD1L1:00000003 [INF] Executed endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (99874f2b)
+2022-01-02T02:46:00.9831382+03:30 0HMEDFIISD1L1:00000003 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/Discount - 0 - 405 - application/json;+charset=utf-8 5021.4564ms (791a596a)
+2022-01-02T02:46:13.0460311+03:30 0HMEDFIISD1L1:00000004 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Discount - 0 (ca22a1cb)
+2022-01-02T02:46:13.0473987+03:30 0HMEDFIISD1L1:00000004 [INF] Executing endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (500cc934)
+2022-01-02T02:46:13.0478191+03:30 0HMEDFIISD1L1:00000004 [INF] Route matched with "{action = \"Post\", controller = \"Discount\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.DisCountCode] Post(System.Text.Json.Nodes.JsonObject)" on controller "webApp.Controllers.DiscountController" ("webApp"). (122b2fdf)
+2022-01-02T02:46:13.0986543+03:30 0HMEDFIISD1L1:00000004 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-02T02:46:13.1331022+03:30 0HMEDFIISD1L1:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2022-01-02T02:47:51.6640512+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-02T02:47:51.6926384+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-02T02:47:51.7322470+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-02T02:47:51.7426297+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-02T02:47:51.7745926+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2022-01-02T02:47:58.7099798+03:30 0HMEDFJPDUL60:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Discount - 0 (ca22a1cb)
+2022-01-02T02:47:59.0001211+03:30 0HMEDFJPDUL60:00000002 [INF] Executing endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (500cc934)
+2022-01-02T02:47:59.1050491+03:30 0HMEDFJPDUL60:00000002 [INF] Route matched with "{action = \"Post\", controller = \"Discount\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.DisCountCode] Post(System.Text.Json.Nodes.JsonObject)" on controller "webApp.Controllers.DiscountController" ("webApp"). (122b2fdf)
+2022-01-02T02:48:02.5850389+03:30 0HMEDFJPDUL60:00000002 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-02T02:48:04.2582860+03:30 0HMEDFJPDUL60:00000002 [INF] Executed DbCommand ("46"ms) [Parameters=["@__token_0='?' (Size = 45)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2022-01-02T02:48:04.3087372+03:30 0HMEDFJPDUL60:00000002 [INF] Authorization failed for the request at filter '"webApp.OAuth.LoginRequire"'. (8b6446cb)
+2022-01-02T02:48:04.3171711+03:30 0HMEDFJPDUL60:00000002 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType12`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2022-01-02T02:48:04.4173460+03:30 0HMEDFJPDUL60:00000002 [INF] Executed action "webApp.Controllers.DiscountController.Post (webApp)" in 5298.2836ms (afa2e885)
+2022-01-02T02:48:04.4179587+03:30 0HMEDFJPDUL60:00000002 [INF] Executed endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (99874f2b)
+2022-01-02T02:48:04.4396403+03:30 0HMEDFJPDUL60:00000002 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/Discount - 0 - 405 - application/json;+charset=utf-8 5737.7819ms (791a596a)
+2022-01-02T02:48:07.4090486+03:30 0HMEDFJPDUL60:00000003 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Discount - 0 (ca22a1cb)
+2022-01-02T02:48:07.4126002+03:30 0HMEDFJPDUL60:00000003 [INF] Executing endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (500cc934)
+2022-01-02T02:48:07.4130849+03:30 0HMEDFJPDUL60:00000003 [INF] Route matched with "{action = \"Post\", controller = \"Discount\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.DisCountCode] Post(System.Text.Json.Nodes.JsonObject)" on controller "webApp.Controllers.DiscountController" ("webApp"). (122b2fdf)
+2022-01-02T02:48:07.4332456+03:30 0HMEDFJPDUL60:00000003 [INF] Authorization failed for the request at filter '"webApp.OAuth.LoginRequire"'. (8b6446cb)
+2022-01-02T02:48:07.4336874+03:30 0HMEDFJPDUL60:00000003 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType12`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2022-01-02T02:48:07.4349581+03:30 0HMEDFJPDUL60:00000003 [INF] Executed action "webApp.Controllers.DiscountController.Post (webApp)" in 21.5808ms (afa2e885)
+2022-01-02T02:48:07.4351490+03:30 0HMEDFJPDUL60:00000003 [INF] Executed endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (99874f2b)
+2022-01-02T02:48:07.4359280+03:30 0HMEDFJPDUL60:00000003 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/Discount - 0 - 405 - application/json;+charset=utf-8 26.8248ms (791a596a)
+2022-01-02T02:48:11.8717070+03:30 0HMEDFJPDUL60:00000004 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Discount - 0 (ca22a1cb)
+2022-01-02T02:48:11.8726178+03:30 0HMEDFJPDUL60:00000004 [INF] Executing endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (500cc934)
+2022-01-02T02:48:11.8728152+03:30 0HMEDFJPDUL60:00000004 [INF] Route matched with "{action = \"Post\", controller = \"Discount\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.DisCountCode] Post(System.Text.Json.Nodes.JsonObject)" on controller "webApp.Controllers.DiscountController" ("webApp"). (122b2fdf)
+2022-01-02T02:48:11.9068980+03:30 0HMEDFJPDUL60:00000004 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-02T02:48:11.9401653+03:30 0HMEDFJPDUL60:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2022-01-02T02:48:12.2789162+03:30 0HMEDFJPDUL60:00000004 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2022-01-02T02:48:12.2846103+03:30 0HMEDFJPDUL60:00000004 [INF] Executed action "webApp.Controllers.DiscountController.Post (webApp)" in 411.6003ms (afa2e885)
+2022-01-02T02:48:12.2847898+03:30 0HMEDFJPDUL60:00000004 [INF] Executed endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (99874f2b)
+2022-01-02T02:48:12.2853617+03:30 0HMEDFJPDUL60:00000004 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/Discount - 0 - 415 - application/problem+json;+charset=utf-8 413.5313ms (791a596a)
+2022-01-02T02:48:41.4952608+03:30 0HMEDFJPDUL60:00000005 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Discount application/json 25 (ca22a1cb)
+2022-01-02T02:48:41.4957745+03:30 0HMEDFJPDUL60:00000005 [INF] Executing endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (500cc934)
+2022-01-02T02:48:41.4961494+03:30 0HMEDFJPDUL60:00000005 [INF] Route matched with "{action = \"Post\", controller = \"Discount\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.DisCountCode] Post(System.Text.Json.Nodes.JsonObject)" on controller "webApp.Controllers.DiscountController" ("webApp"). (122b2fdf)
+2022-01-02T02:48:41.6593963+03:30 0HMEDFJPDUL60:00000005 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-02T02:48:41.6725920+03:30 0HMEDFJPDUL60:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2022-01-02T02:50:31.6373822+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-02T02:50:31.6613372+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-02T02:50:31.6856923+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-02T02:50:31.6957522+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-02T02:50:31.7062679+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2022-01-02T02:50:38.4234588+03:30 0HMEDFL911O66:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Discount application/json 25 (ca22a1cb)
+2022-01-02T02:50:38.7237550+03:30 0HMEDFL911O66:00000002 [INF] Executing endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (500cc934)
+2022-01-02T02:50:38.8265116+03:30 0HMEDFL911O66:00000002 [INF] Route matched with "{action = \"Post\", controller = \"Discount\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.DisCountCode] Post(System.Text.Json.Nodes.JsonObject)" on controller "webApp.Controllers.DiscountController" ("webApp"). (122b2fdf)
+2022-01-02T02:50:41.7407506+03:30 0HMEDFL911O66:00000002 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-02T02:50:43.4607232+03:30 0HMEDFL911O66:00000002 [INF] Executed DbCommand ("56"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2022-01-02T02:53:39.7484482+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-02T02:53:39.7664662+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-02T02:53:39.7958131+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-02T02:53:39.8045743+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-02T02:53:39.8135692+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2022-01-02T02:54:08.7893944+03:30 0HMEDFN7NA178:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Discount application/json 25 (ca22a1cb)
+2022-01-02T02:54:09.0068975+03:30 0HMEDFN7NA178:00000002 [INF] Executing endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (500cc934)
+2022-01-02T02:54:09.1042035+03:30 0HMEDFN7NA178:00000002 [INF] Route matched with "{action = \"Post\", controller = \"Discount\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.DisCountCode] Post(System.Text.Json.Nodes.JsonObject)" on controller "webApp.Controllers.DiscountController" ("webApp"). (122b2fdf)
+2022-01-02T02:54:11.6559569+03:30 0HMEDFN7NA178:00000002 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-02T02:54:13.2017363+03:30 0HMEDFN7NA178:00000002 [INF] Executed DbCommand ("43"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2022-01-02T02:57:17.7089847+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-02T02:57:17.7241467+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-02T02:57:17.7477696+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-02T02:57:17.7546932+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-02T02:57:17.7669563+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2022-01-02T02:57:42.7619199+03:30 0HMEDFP7GH5IA:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Discount application/json 25 (ca22a1cb)
+2022-01-02T02:57:42.9758678+03:30 0HMEDFP7GH5IA:00000002 [INF] Executing endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (500cc934)
+2022-01-02T02:57:43.0558731+03:30 0HMEDFP7GH5IA:00000002 [INF] Route matched with "{action = \"Post\", controller = \"Discount\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.DisCountCode] Post(webApp.Request.DiscountRequest)" on controller "webApp.Controllers.DiscountController" ("webApp"). (122b2fdf)
+2022-01-02T02:57:45.5549507+03:30 0HMEDFP7GH5IA:00000002 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-02T02:57:47.0307561+03:30 0HMEDFP7GH5IA:00000002 [INF] Executed DbCommand ("51"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2022-01-02T02:57:47.4847930+03:30 0HMEDFP7GH5IA:00000002 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2022-01-02T02:57:47.5315922+03:30 0HMEDFP7GH5IA:00000002 [INF] Executed action "webApp.Controllers.DiscountController.Post (webApp)" in 4461.8718ms (afa2e885)
+2022-01-02T02:57:47.5318918+03:30 0HMEDFP7GH5IA:00000002 [INF] Executed endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (99874f2b)
+2022-01-02T02:57:47.5508230+03:30 0HMEDFP7GH5IA:00000002 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/Discount application/json 25 - 400 - application/problem+json;+charset=utf-8 4794.6762ms (791a596a)
+2022-01-02T02:57:58.6026308+03:30 0HMEDFP7GH5IA:00000003 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Discount application/json 26 (ca22a1cb)
+2022-01-02T02:57:58.6045601+03:30 0HMEDFP7GH5IA:00000003 [INF] Executing endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (500cc934)
+2022-01-02T02:57:58.6056241+03:30 0HMEDFP7GH5IA:00000003 [INF] Route matched with "{action = \"Post\", controller = \"Discount\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.DisCountCode] Post(webApp.Request.DiscountRequest)" on controller "webApp.Controllers.DiscountController" ("webApp"). (122b2fdf)
+2022-01-02T02:57:58.6424382+03:30 0HMEDFP7GH5IA:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-02T02:57:58.6559221+03:30 0HMEDFP7GH5IA:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)
+2022-01-02T02:57:58.6746433+03:30 0HMEDFP7GH5IA:00000003 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2022-01-02T02:57:58.6769548+03:30 0HMEDFP7GH5IA:00000003 [INF] Executed action "webApp.Controllers.DiscountController.Post (webApp)" in 70.8198ms (afa2e885)
+2022-01-02T02:57:58.6770784+03:30 0HMEDFP7GH5IA:00000003 [INF] Executed endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (99874f2b)
+2022-01-02T02:57:58.6781369+03:30 0HMEDFP7GH5IA:00000003 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/Discount application/json 26 - 400 - application/problem+json;+charset=utf-8 75.9951ms (791a596a)
+2022-01-02T02:58:07.0453779+03:30 0HMEDFP7GH5IA:00000004 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Discount application/json 27 (ca22a1cb)
+2022-01-02T02:58:07.0464373+03:30 0HMEDFP7GH5IA:00000004 [INF] Executing endpoint '"webApp.Controllers.DiscountController.Post (webApp)"' (500cc934)
+2022-01-02T02:58:07.0466715+03:30 0HMEDFP7GH5IA:00000004 [INF] Route matched with "{action = \"Post\", controller = \"Discount\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.DisCountCode] Post(webApp.Request.DiscountRequest)" on controller "webApp.Controllers.DiscountController" ("webApp"). (122b2fdf)
+2022-01-02T02:58:07.1332199+03:30 0HMEDFP7GH5IA:00000004 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-02T02:58:07.1435092+03:30 0HMEDFP7GH5IA:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__token_0='?' (Size = 44)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"TokenID\", \"t\".\"UserID\", \"t\".\"exp_dateTime\", \"t\".\"gen_dateTime\", \"t\".\"token\", \"u\".\"UserID\", \"u\".\"address\", \"u\".\"email\", \"u\".\"first_name\", \"u\".\"last_name\", \"u\".\"password\", \"u\".\"phone_number\", \"u\".\"username\"
+FROM \"Tokens\" AS \"t\"
+LEFT JOIN \"Users\" AS \"u\" ON \"t\".\"UserID\" = \"u\".\"UserID\"
+WHERE \"t\".\"token\" = @__token_0
+LIMIT 1" (0723d8ff)

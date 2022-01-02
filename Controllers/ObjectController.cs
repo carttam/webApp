@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using webApp.Data;
-using webApp.Manager;
+using webApp.OAuth;
 using Object = webApp.Models.Object;
 
 namespace webApp.Controllers
@@ -65,6 +65,7 @@ namespace webApp.Controllers
 
         // Delete Object /api/[controller]/{id} DELETE
         [HttpDelete("{id}")]
+        [LoginRequire]
         public async Task<JsonResult> Delete(int id)
         {
             string message = "Bad Request .";
