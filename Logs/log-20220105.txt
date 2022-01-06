@@ -1450,3 +1450,457 @@ LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID
 2022-01-05T16:13:50.0420880+03:30 0HMEG6JRBP6GF:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
 2022-01-05T16:13:50.0421958+03:30 0HMEG6JRBP6GF:00000003 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 4.5846ms (791a596a)
 2022-01-05T16:35:59.0530309+03:30  [INF] Application is shutting down... (90f52c38)
+2022-01-05T20:13:02.3776094+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-05T20:13:02.3858982+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-05T20:13:02.3964817+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-05T20:13:02.3971015+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-05T20:13:02.3971839+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2022-01-05T20:33:44.3639673+03:30 0HMEGDLAB0RFO:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:33:44.6013298+03:30 0HMEGDLAB0RFO:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:33:44.6158992+03:30 0HMEGDLAB0RFO:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:33:44.6768006+03:30 0HMEGDLAB0RFO:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:33:46.3789349+03:30 0HMEGDLAB0RFO:00000001 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:33:47.0319405+03:30 0HMEGDLAB0RFO:00000001 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:33:47.2248365+03:30 0HMEGDLAB0RFO:00000001 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:33:47.2894523+03:30 0HMEGDLAB0RFO:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 2601.9342ms (afa2e885)
+2022-01-05T20:33:47.2896441+03:30 0HMEGDLAB0RFO:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:33:47.2998805+03:30 0HMEGDLAB0RFO:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 2962.5683ms (791a596a)
+2022-01-05T20:36:21.8660868+03:30 0HMEGDLAB0RFQ:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:36:21.8697656+03:30 0HMEGDLAB0RFQ:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:36:21.8699604+03:30 0HMEGDLAB0RFQ:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:36:21.8703690+03:30 0HMEGDLAB0RFQ:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:36:21.8989672+03:30 0HMEGDLAB0RFQ:00000001 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:36:21.9065952+03:30 0HMEGDLAB0RFQ:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:36:21.9093480+03:30 0HMEGDLAB0RFQ:00000001 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:36:21.9116269+03:30 0HMEGDLAB0RFQ:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 40.5433ms (afa2e885)
+2022-01-05T20:36:21.9118288+03:30 0HMEGDLAB0RFQ:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:36:21.9127153+03:30 0HMEGDLAB0RFQ:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 46.5905ms (791a596a)
+2022-01-05T20:42:41.0284807+03:30 0HMEGDLAB0RFS:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:42:41.0308496+03:30 0HMEGDLAB0RFS:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:42:41.0310139+03:30 0HMEGDLAB0RFS:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:42:41.0311620+03:30 0HMEGDLAB0RFS:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:42:41.1724525+03:30 0HMEGDLAB0RFS:00000001 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:42:41.1837758+03:30 0HMEGDLAB0RFS:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:42:41.1853078+03:30 0HMEGDLAB0RFS:00000001 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:42:41.1861986+03:30 0HMEGDLAB0RFS:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 154.8988ms (afa2e885)
+2022-01-05T20:42:41.1862717+03:30 0HMEGDLAB0RFS:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:42:41.1865939+03:30 0HMEGDLAB0RFS:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 158.1798ms (791a596a)
+2022-01-05T20:44:31.7702131+03:30 0HMEGDLAB0RFS:00000003 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:44:31.7707066+03:30 0HMEGDLAB0RFS:00000003 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:44:31.7708771+03:30 0HMEGDLAB0RFS:00000003 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:44:31.7711705+03:30 0HMEGDLAB0RFS:00000003 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:44:31.7764362+03:30 0HMEGDLAB0RFS:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:44:31.7783976+03:30 0HMEGDLAB0RFS:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:44:31.7797310+03:30 0HMEGDLAB0RFS:00000003 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:44:31.7804037+03:30 0HMEGDLAB0RFS:00000003 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 9.1573ms (afa2e885)
+2022-01-05T20:44:31.7804754+03:30 0HMEGDLAB0RFS:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:44:31.7806528+03:30 0HMEGDLAB0RFS:00000003 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 10.7385ms (791a596a)
+2022-01-05T20:47:16.4080216+03:30 0HMEGDLAB0RFU:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:47:16.4082295+03:30 0HMEGDLAB0RFU:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:47:16.4082975+03:30 0HMEGDLAB0RFU:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:47:16.4084302+03:30 0HMEGDLAB0RFU:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:47:16.4101660+03:30 0HMEGDLAB0RFU:00000001 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:47:16.4121492+03:30 0HMEGDLAB0RFU:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:47:16.4134664+03:30 0HMEGDLAB0RFU:00000001 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:47:16.4144024+03:30 0HMEGDLAB0RFU:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 5.8978ms (afa2e885)
+2022-01-05T20:47:16.4144650+03:30 0HMEGDLAB0RFU:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:47:16.4146802+03:30 0HMEGDLAB0RFU:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 6.7931ms (791a596a)
+2022-01-05T20:48:03.0724728+03:30 0HMEGDLAB0RFU:00000003 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:48:03.0726736+03:30 0HMEGDLAB0RFU:00000003 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:48:03.0727545+03:30 0HMEGDLAB0RFU:00000003 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:48:03.0728758+03:30 0HMEGDLAB0RFU:00000003 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:48:03.0741842+03:30 0HMEGDLAB0RFU:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:48:03.0780359+03:30 0HMEGDLAB0RFU:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:48:03.0792297+03:30 0HMEGDLAB0RFU:00000003 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:48:03.0798943+03:30 0HMEGDLAB0RFU:00000003 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 6.9541ms (afa2e885)
+2022-01-05T20:48:03.0799554+03:30 0HMEGDLAB0RFU:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:48:03.0802309+03:30 0HMEGDLAB0RFU:00000003 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 7.7526ms (791a596a)
+2022-01-05T20:48:38.8286202+03:30 0HMEGDLAB0RFU:00000005 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:48:38.8288952+03:30 0HMEGDLAB0RFU:00000005 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:48:38.8290787+03:30 0HMEGDLAB0RFU:00000005 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:48:38.8293328+03:30 0HMEGDLAB0RFU:00000005 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:48:38.8305782+03:30 0HMEGDLAB0RFU:00000005 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:48:38.8326552+03:30 0HMEGDLAB0RFU:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:48:38.8342101+03:30 0HMEGDLAB0RFU:00000005 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:48:38.8351042+03:30 0HMEGDLAB0RFU:00000005 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 5.6979ms (afa2e885)
+2022-01-05T20:48:38.8352596+03:30 0HMEGDLAB0RFU:00000005 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:48:38.8452341+03:30 0HMEGDLAB0RFU:00000005 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 16.6163ms (791a596a)
+2022-01-05T20:54:47.9966429+03:30 0HMEGDLAB0RG0:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:54:47.9971596+03:30 0HMEGDLAB0RG0:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:54:47.9972221+03:30 0HMEGDLAB0RG0:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:54:47.9973370+03:30 0HMEGDLAB0RG0:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:54:47.9987450+03:30 0HMEGDLAB0RG0:00000001 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:54:48.0164516+03:30 0HMEGDLAB0RG0:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:54:48.0179303+03:30 0HMEGDLAB0RG0:00000001 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:54:48.0192481+03:30 0HMEGDLAB0RG0:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 21.8219ms (afa2e885)
+2022-01-05T20:54:48.0199357+03:30 0HMEGDLAB0RG0:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:54:48.0210844+03:30 0HMEGDLAB0RG0:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 24.4297ms (791a596a)
+2022-01-05T20:55:28.6093333+03:30 0HMEGDLAB0RG0:00000003 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:55:28.6095192+03:30 0HMEGDLAB0RG0:00000003 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:55:28.6095578+03:30 0HMEGDLAB0RG0:00000003 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:55:28.6096595+03:30 0HMEGDLAB0RG0:00000003 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:55:28.6115598+03:30 0HMEGDLAB0RG0:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:55:28.6169569+03:30 0HMEGDLAB0RG0:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:55:28.6199282+03:30 0HMEGDLAB0RG0:00000003 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:55:28.6353806+03:30 0HMEGDLAB0RG0:00000003 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 25.6621ms (afa2e885)
+2022-01-05T20:55:28.6354568+03:30 0HMEGDLAB0RG0:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:55:28.6356272+03:30 0HMEGDLAB0RG0:00000003 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 26.2813ms (791a596a)
+2022-01-05T20:56:01.0392287+03:30 0HMEGDLAB0RG0:00000005 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:56:01.0397628+03:30 0HMEGDLAB0RG0:00000005 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:56:01.0402544+03:30 0HMEGDLAB0RG0:00000005 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:56:01.0404974+03:30 0HMEGDLAB0RG0:00000005 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:56:01.0420112+03:30 0HMEGDLAB0RG0:00000005 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:56:01.0508539+03:30 0HMEGDLAB0RG0:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:56:01.0524159+03:30 0HMEGDLAB0RG0:00000005 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:56:01.0532700+03:30 0HMEGDLAB0RG0:00000005 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 12.5524ms (afa2e885)
+2022-01-05T20:56:01.0534140+03:30 0HMEGDLAB0RG0:00000005 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:56:01.0536638+03:30 0HMEGDLAB0RG0:00000005 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 14.4362ms (791a596a)
+2022-01-05T20:58:16.9464758+03:30 0HMEGDLAB0RG2:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:58:16.9467033+03:30 0HMEGDLAB0RG2:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:58:16.9467624+03:30 0HMEGDLAB0RG2:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:58:16.9468907+03:30 0HMEGDLAB0RG2:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:58:16.9480730+03:30 0HMEGDLAB0RG2:00000001 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:58:16.9553684+03:30 0HMEGDLAB0RG2:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:58:16.9571072+03:30 0HMEGDLAB0RG2:00000001 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:58:16.9580958+03:30 0HMEGDLAB0RG2:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 11.1393ms (afa2e885)
+2022-01-05T20:58:16.9585215+03:30 0HMEGDLAB0RG2:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:58:16.9594713+03:30 0HMEGDLAB0RG2:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 12.4573ms (791a596a)
+2022-01-05T20:59:20.0166613+03:30 0HMEGDLAB0RG2:00000003 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:59:20.0187213+03:30 0HMEGDLAB0RG2:00000003 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:59:20.0198387+03:30 0HMEGDLAB0RG2:00000003 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:59:20.0213444+03:30 0HMEGDLAB0RG2:00000003 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:59:20.0232072+03:30 0HMEGDLAB0RG2:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:59:20.0250766+03:30 0HMEGDLAB0RG2:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:59:20.0355321+03:30 0HMEGDLAB0RG2:00000003 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:59:20.0383140+03:30 0HMEGDLAB0RG2:00000003 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 16.1965ms (afa2e885)
+2022-01-05T20:59:20.0389704+03:30 0HMEGDLAB0RG2:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:59:20.0402598+03:30 0HMEGDLAB0RG2:00000003 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 24.2469ms (791a596a)
+2022-01-05T20:59:28.5470053+03:30 0HMEGDLAB0RG2:00000005 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:59:28.5472660+03:30 0HMEGDLAB0RG2:00000005 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:59:28.5473506+03:30 0HMEGDLAB0RG2:00000005 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:59:28.5474559+03:30 0HMEGDLAB0RG2:00000005 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:59:28.5485124+03:30 0HMEGDLAB0RG2:00000005 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:59:28.5496156+03:30 0HMEGDLAB0RG2:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:59:28.5505977+03:30 0HMEGDLAB0RG2:00000005 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:59:28.5531356+03:30 0HMEGDLAB0RG2:00000005 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 5.6253ms (afa2e885)
+2022-01-05T20:59:28.5531898+03:30 0HMEGDLAB0RG2:00000005 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:59:28.5545981+03:30 0HMEGDLAB0RG2:00000005 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 7.6095ms (791a596a)
+2022-01-05T20:59:48.7213731+03:30 0HMEGDLAB0RG2:00000007 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T20:59:48.7218481+03:30 0HMEGDLAB0RG2:00000007 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T20:59:48.7219486+03:30 0HMEGDLAB0RG2:00000007 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T20:59:48.7222052+03:30 0HMEGDLAB0RG2:00000007 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T20:59:48.7235404+03:30 0HMEGDLAB0RG2:00000007 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T20:59:48.7257925+03:30 0HMEGDLAB0RG2:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T20:59:48.7268976+03:30 0HMEGDLAB0RG2:00000007 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T20:59:48.7277480+03:30 0HMEGDLAB0RG2:00000007 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 5.4865ms (afa2e885)
+2022-01-05T20:59:48.7304383+03:30 0HMEGDLAB0RG2:00000007 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T20:59:48.7381924+03:30 0HMEGDLAB0RG2:00000007 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 16.8362ms (791a596a)
+2022-01-05T21:00:21.9355384+03:30 0HMEGDLAB0RG2:00000009 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:00:21.9358171+03:30 0HMEGDLAB0RG2:00000009 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:00:21.9359495+03:30 0HMEGDLAB0RG2:00000009 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:00:21.9362066+03:30 0HMEGDLAB0RG2:00000009 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:00:21.9375053+03:30 0HMEGDLAB0RG2:00000009 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:00:21.9405435+03:30 0HMEGDLAB0RG2:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:00:21.9418442+03:30 0HMEGDLAB0RG2:00000009 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:00:21.9434793+03:30 0HMEGDLAB0RG2:00000009 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 6.6097ms (afa2e885)
+2022-01-05T21:00:21.9436978+03:30 0HMEGDLAB0RG2:00000009 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:00:21.9441756+03:30 0HMEGDLAB0RG2:00000009 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 8.5160ms (791a596a)
+2022-01-05T21:00:38.0824279+03:30 0HMEGDLAB0RG2:0000000B [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:00:38.0827161+03:30 0HMEGDLAB0RG2:0000000B [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:00:38.0827984+03:30 0HMEGDLAB0RG2:0000000B [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:00:38.0829068+03:30 0HMEGDLAB0RG2:0000000B [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:00:38.0921033+03:30 0HMEGDLAB0RG2:0000000B [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:00:38.1000007+03:30 0HMEGDLAB0RG2:0000000B [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:00:38.1016085+03:30 0HMEGDLAB0RG2:0000000B [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:00:38.1039627+03:30 0HMEGDLAB0RG2:0000000B [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 20.9683ms (afa2e885)
+2022-01-05T21:00:38.1044823+03:30 0HMEGDLAB0RG2:0000000B [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:00:38.1051890+03:30 0HMEGDLAB0RG2:0000000B [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 22.7296ms (791a596a)
+2022-01-05T21:04:20.2457897+03:30 0HMEGDLAB0RG4:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:04:20.2464439+03:30 0HMEGDLAB0RG4:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:04:20.2465286+03:30 0HMEGDLAB0RG4:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:04:20.2468213+03:30 0HMEGDLAB0RG4:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:04:20.2509950+03:30 0HMEGDLAB0RG4:00000001 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:04:20.2543155+03:30 0HMEGDLAB0RG4:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:04:20.2554009+03:30 0HMEGDLAB0RG4:00000001 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:04:20.2591928+03:30 0HMEGDLAB0RG4:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 12.2643ms (afa2e885)
+2022-01-05T21:04:20.2593504+03:30 0HMEGDLAB0RG4:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:04:20.2619603+03:30 0HMEGDLAB0RG4:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 16.1462ms (791a596a)
+2022-01-05T21:10:20.1437769+03:30 0HMEGDLAB0RG6:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:10:20.1440952+03:30 0HMEGDLAB0RG6:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:10:20.1441884+03:30 0HMEGDLAB0RG6:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:10:20.1443186+03:30 0HMEGDLAB0RG6:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:10:20.1465615+03:30 0HMEGDLAB0RG6:00000001 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:10:20.1620516+03:30 0HMEGDLAB0RG6:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:10:20.1632760+03:30 0HMEGDLAB0RG6:00000001 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:10:20.1641208+03:30 0HMEGDLAB0RG6:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 19.6901ms (afa2e885)
+2022-01-05T21:10:20.1642791+03:30 0HMEGDLAB0RG6:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:10:20.1648042+03:30 0HMEGDLAB0RG6:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 20.8396ms (791a596a)
+2022-01-05T21:11:02.7249782+03:30 0HMEGDLAB0RG6:00000003 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:11:02.7251565+03:30 0HMEGDLAB0RG6:00000003 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:11:02.7251993+03:30 0HMEGDLAB0RG6:00000003 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:11:02.7261533+03:30 0HMEGDLAB0RG6:00000003 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:11:02.7275208+03:30 0HMEGDLAB0RG6:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:11:02.7303747+03:30 0HMEGDLAB0RG6:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:11:02.7312183+03:30 0HMEGDLAB0RG6:00000003 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:11:02.7330647+03:30 0HMEGDLAB0RG6:00000003 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 6.773ms (afa2e885)
+2022-01-05T21:11:02.7340727+03:30 0HMEGDLAB0RG6:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:11:02.7346567+03:30 0HMEGDLAB0RG6:00000003 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 9.6445ms (791a596a)
+2022-01-05T21:11:22.9977260+03:30 0HMEGDLAB0RG6:00000005 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:11:22.9978837+03:30 0HMEGDLAB0RG6:00000005 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:11:22.9979222+03:30 0HMEGDLAB0RG6:00000005 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:11:22.9980187+03:30 0HMEGDLAB0RG6:00000005 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:11:22.9990961+03:30 0HMEGDLAB0RG6:00000005 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:11:23.0000743+03:30 0HMEGDLAB0RG6:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:11:23.0007447+03:30 0HMEGDLAB0RG6:00000005 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:11:23.0011343+03:30 0HMEGDLAB0RG6:00000005 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 3.0737ms (afa2e885)
+2022-01-05T21:11:23.0011689+03:30 0HMEGDLAB0RG6:00000005 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:11:23.0012660+03:30 0HMEGDLAB0RG6:00000005 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 3.5579ms (791a596a)
+2022-01-05T21:11:50.5486551+03:30 0HMEGDLAB0RG6:00000007 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:11:50.5488109+03:30 0HMEGDLAB0RG6:00000007 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:11:50.5488485+03:30 0HMEGDLAB0RG6:00000007 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:11:50.5489472+03:30 0HMEGDLAB0RG6:00000007 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:11:50.5497378+03:30 0HMEGDLAB0RG6:00000007 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:11:50.5516120+03:30 0HMEGDLAB0RG6:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:11:50.5532376+03:30 0HMEGDLAB0RG6:00000007 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:11:50.5539720+03:30 0HMEGDLAB0RG6:00000007 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 4.6514ms (afa2e885)
+2022-01-05T21:11:50.5540201+03:30 0HMEGDLAB0RG6:00000007 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:11:50.5541746+03:30 0HMEGDLAB0RG6:00000007 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 5.5299ms (791a596a)
+2022-01-05T21:12:18.0902080+03:30 0HMEGDLAB0RG6:00000009 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:12:18.0913266+03:30 0HMEGDLAB0RG6:00000009 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:12:18.0915654+03:30 0HMEGDLAB0RG6:00000009 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:12:18.0917084+03:30 0HMEGDLAB0RG6:00000009 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:12:18.0961925+03:30 0HMEGDLAB0RG6:00000009 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:12:18.1002040+03:30 0HMEGDLAB0RG6:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:12:18.1019927+03:30 0HMEGDLAB0RG6:00000009 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:12:18.1066221+03:30 0HMEGDLAB0RG6:00000009 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 14.8543ms (afa2e885)
+2022-01-05T21:12:18.1066727+03:30 0HMEGDLAB0RG6:00000009 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:12:18.1068172+03:30 0HMEGDLAB0RG6:00000009 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 16.6205ms (791a596a)
+2022-01-05T21:12:52.8600342+03:30 0HMEGDLAB0RG6:0000000B [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:12:52.8602560+03:30 0HMEGDLAB0RG6:0000000B [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:12:52.8602925+03:30 0HMEGDLAB0RG6:0000000B [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:12:52.8603842+03:30 0HMEGDLAB0RG6:0000000B [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:12:52.8656050+03:30 0HMEGDLAB0RG6:0000000B [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:12:52.8796932+03:30 0HMEGDLAB0RG6:0000000B [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:12:52.8849647+03:30 0HMEGDLAB0RG6:0000000B [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:12:52.8877153+03:30 0HMEGDLAB0RG6:0000000B [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 27.2479ms (afa2e885)
+2022-01-05T21:12:52.8878811+03:30 0HMEGDLAB0RG6:0000000B [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:12:52.8882263+03:30 0HMEGDLAB0RG6:0000000B [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 28.1286ms (791a596a)
+2022-01-05T21:12:55.2774483+03:30 0HMEGDLAB0RG6:0000000D [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:12:55.2776582+03:30 0HMEGDLAB0RG6:0000000D [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:12:55.2777190+03:30 0HMEGDLAB0RG6:0000000D [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:12:55.2779796+03:30 0HMEGDLAB0RG6:0000000D [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:12:55.2792458+03:30 0HMEGDLAB0RG6:0000000D [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:12:55.2851184+03:30 0HMEGDLAB0RG6:0000000D [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:12:55.2860568+03:30 0HMEGDLAB0RG6:0000000D [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:12:55.2866759+03:30 0HMEGDLAB0RG6:0000000D [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 8.6088ms (afa2e885)
+2022-01-05T21:12:55.2867270+03:30 0HMEGDLAB0RG6:0000000D [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:12:55.2870505+03:30 0HMEGDLAB0RG6:0000000D [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 9.4811ms (791a596a)
+2022-01-05T21:13:03.2522438+03:30 0HMEGDLAB0RG6:0000000F [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:13:03.2524016+03:30 0HMEGDLAB0RG6:0000000F [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:13:03.2524407+03:30 0HMEGDLAB0RG6:0000000F [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:13:03.2525363+03:30 0HMEGDLAB0RG6:0000000F [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:13:03.2533681+03:30 0HMEGDLAB0RG6:0000000F [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:13:03.2543155+03:30 0HMEGDLAB0RG6:0000000F [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:13:03.2551699+03:30 0HMEGDLAB0RG6:0000000F [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:13:03.2556391+03:30 0HMEGDLAB0RG6:0000000F [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 3.0526ms (afa2e885)
+2022-01-05T21:13:03.2557013+03:30 0HMEGDLAB0RG6:0000000F [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:13:03.2558164+03:30 0HMEGDLAB0RG6:0000000F [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 3.5752ms (791a596a)
+2022-01-05T21:13:23.0644539+03:30 0HMEGDLAB0RG6:00000011 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:13:23.0649093+03:30 0HMEGDLAB0RG6:00000011 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:13:23.0649686+03:30 0HMEGDLAB0RG6:00000011 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:13:23.0650739+03:30 0HMEGDLAB0RG6:00000011 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:13:23.0663439+03:30 0HMEGDLAB0RG6:00000011 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:13:23.0719032+03:30 0HMEGDLAB0RG6:00000011 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:13:23.0728855+03:30 0HMEGDLAB0RG6:00000011 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:13:23.0749552+03:30 0HMEGDLAB0RG6:00000011 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 9.7453ms (afa2e885)
+2022-01-05T21:13:23.0750508+03:30 0HMEGDLAB0RG6:00000011 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:13:23.0773114+03:30 0HMEGDLAB0RG6:00000011 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 13.5773ms (791a596a)
+2022-01-05T21:13:24.4651910+03:30 0HMEGDLAB0RG6:00000013 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:13:24.4653696+03:30 0HMEGDLAB0RG6:00000013 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:13:24.4654087+03:30 0HMEGDLAB0RG6:00000013 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:13:24.4655087+03:30 0HMEGDLAB0RG6:00000013 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:13:24.4664392+03:30 0HMEGDLAB0RG6:00000013 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:13:24.4676162+03:30 0HMEGDLAB0RG6:00000013 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:13:24.4684219+03:30 0HMEGDLAB0RG6:00000013 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:13:24.4713834+03:30 0HMEGDLAB0RG6:00000013 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 5.8116ms (afa2e885)
+2022-01-05T21:13:24.4714580+03:30 0HMEGDLAB0RG6:00000013 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:13:24.4716138+03:30 0HMEGDLAB0RG6:00000013 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 6.4238ms (791a596a)
+2022-01-05T21:13:34.5975958+03:30 0HMEGDLAB0RG6:00000015 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:13:34.5981389+03:30 0HMEGDLAB0RG6:00000015 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:13:34.5982084+03:30 0HMEGDLAB0RG6:00000015 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:13:34.5984973+03:30 0HMEGDLAB0RG6:00000015 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:13:34.5997130+03:30 0HMEGDLAB0RG6:00000015 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:13:34.6053340+03:30 0HMEGDLAB0RG6:00000015 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:13:34.6079450+03:30 0HMEGDLAB0RG6:00000015 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:13:34.6090938+03:30 0HMEGDLAB0RG6:00000015 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 10.5331ms (afa2e885)
+2022-01-05T21:13:34.6098496+03:30 0HMEGDLAB0RG6:00000015 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:13:34.6104322+03:30 0HMEGDLAB0RG6:00000015 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 12.7451ms (791a596a)
+2022-01-05T21:13:35.9359937+03:30 0HMEGDLAB0RG6:00000017 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:13:35.9361518+03:30 0HMEGDLAB0RG6:00000017 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:13:35.9362194+03:30 0HMEGDLAB0RG6:00000017 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:13:35.9363185+03:30 0HMEGDLAB0RG6:00000017 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:13:35.9370477+03:30 0HMEGDLAB0RG6:00000017 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:13:35.9516958+03:30 0HMEGDLAB0RG6:00000017 [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:13:35.9525023+03:30 0HMEGDLAB0RG6:00000017 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:13:35.9529548+03:30 0HMEGDLAB0RG6:00000017 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 16.587ms (afa2e885)
+2022-01-05T21:13:35.9530007+03:30 0HMEGDLAB0RG6:00000017 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:13:35.9531389+03:30 0HMEGDLAB0RG6:00000017 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 17.1250ms (791a596a)
+2022-01-05T21:16:20.4980100+03:30 0HMEGDLAB0RG8:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:16:20.4982103+03:30 0HMEGDLAB0RG8:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:16:20.4982565+03:30 0HMEGDLAB0RG8:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:16:20.4983856+03:30 0HMEGDLAB0RG8:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:16:20.4995441+03:30 0HMEGDLAB0RG8:00000001 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:16:20.5014850+03:30 0HMEGDLAB0RG8:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:16:20.5069742+03:30 0HMEGDLAB0RG8:00000001 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:16:20.5098875+03:30 0HMEGDLAB0RG8:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 11.44ms (afa2e885)
+2022-01-05T21:16:20.5099415+03:30 0HMEGDLAB0RG8:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:16:20.5104657+03:30 0HMEGDLAB0RG8:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 12.4214ms (791a596a)
+2022-01-05T21:19:22.8592364+03:30 0HMEGDLAB0RGA:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:19:22.8595270+03:30 0HMEGDLAB0RGA:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:19:22.8595910+03:30 0HMEGDLAB0RGA:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:19:22.8597279+03:30 0HMEGDLAB0RGA:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:19:22.8610223+03:30 0HMEGDLAB0RGA:00000001 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:19:22.8708674+03:30 0HMEGDLAB0RGA:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:19:22.8721343+03:30 0HMEGDLAB0RGA:00000001 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:19:22.8730517+03:30 0HMEGDLAB0RGA:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 13.2418ms (afa2e885)
+2022-01-05T21:19:22.8732638+03:30 0HMEGDLAB0RGA:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:19:22.8735660+03:30 0HMEGDLAB0RGA:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 14.4654ms (791a596a)
+2022-01-05T21:21:07.2063048+03:30 0HMEGDLAB0RGA:00000003 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-05T21:21:07.2066275+03:30 0HMEGDLAB0RGA:00000003 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-05T21:21:07.2067006+03:30 0HMEGDLAB0RGA:00000003 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-05T21:21:07.2068637+03:30 0HMEGDLAB0RGA:00000003 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-05T21:21:07.2083614+03:30 0HMEGDLAB0RGA:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-05T21:21:07.2103938+03:30 0HMEGDLAB0RGA:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-05T21:21:07.2158480+03:30 0HMEGDLAB0RGA:00000003 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-05T21:21:07.2166972+03:30 0HMEGDLAB0RGA:00000003 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 9.7586ms (afa2e885)
+2022-01-05T21:21:07.2168436+03:30 0HMEGDLAB0RGA:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-05T21:21:07.2186099+03:30 0HMEGDLAB0RGA:00000003 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 12.1651ms (791a596a)
+2022-01-05T21:21:18.5413728+03:30  [INF] Application is shutting down... (90f52c38)

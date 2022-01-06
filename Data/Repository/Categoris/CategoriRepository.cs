@@ -11,6 +11,6 @@ public class CategoriRepository : GenericRepository<Categori>, ICategoriReposito
 
     public override async Task<List<Categori>> AllAsync()
     {
-        return await this._context.Categoris.Include(c=>c.subCategoris).ToListAsync();
+        return await this._context.Categoris.Include(c=>c.subCategoris).ThenInclude(sc=>sc.Objects).ToListAsync();
     }
 }
