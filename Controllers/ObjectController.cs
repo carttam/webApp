@@ -21,6 +21,13 @@ namespace webApp.Controllers
             _logger = logger;
         }
 
+        // Get Image /api/[controller]/image/{imgName} GET
+        [HttpGet("image/{imgName}")]
+        public IActionResult Get(string imgName)
+        {
+            return File(System.IO.File.ReadAllBytes(Path.Combine(Environment.ContentRootPath,$"img/{imgName}")),"image/jpeg");
+        }
+
         // Get All Objects /api/[controller] GET
         [HttpGet]
         public async Task<IEnumerable<Object>> Get()
