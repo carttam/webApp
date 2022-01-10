@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Linq.Expressions;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using webApp.Manager;
@@ -15,7 +17,22 @@ namespace webApp.Data.Repository.Objects
 
         public override async Task<List<Object>> AllAsync()
         {
-            return await this._context.Objects.Include(o => o.SubCategori).Include(o => o.Attribute).ToListAsync();
+            return await this._context.Objects.Include(o => o.SubCategori).Include(o => o.Attribute).AsNoTracking().ToListAsync();
+        }
+        
+        public IQueryable<Object> AllQuery()
+        {
+            return this._context.Objects.Include(o => o.SubCategori).Include(o => o.Attribute).AsNoTracking();
+        }
+
+        public IQueryable<Object> WhereQuery([NotNull] Expression<Func<Object,bool>> predicate)
+        {
+            return this._context.Objects.Include(o => o.SubCategori).Include(o => o.Attribute).Where(predicate).AsNoTracking();
+        }
+
+        public override Task<Object?> FindByIDAsync(int? id)
+        {
+            return this._context.Objects.Include(o => o.SubCategori).Include(o => o.Attribute).FirstOrDefaultAsync(o=> o.ObjectID == id);
         }
 
         public async ValueTask<EntityEntry<Object>> AddAsync(Object entity, IFormFile file,

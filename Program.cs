@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
 using webApp.Data;
 
-var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+var  MyAllowSpecificOrigins = "_Policy";
 var builder = WebApplication.CreateBuilder(args);
 
 // Add Logging 
@@ -21,9 +21,10 @@ builder.Services.AddControllers().AddJsonOptions((option) =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
-                      builder =>
+                      b =>
                       {
-                          builder.WithOrigins("*");
+                          b.AllowAnyOrigin();
+                          b.AllowAnyHeader();
                       });
 });
 

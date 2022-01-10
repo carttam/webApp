@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using webApp.Data;
+using webApp.Manager;
 using webApp.OAuth;
 using Object = webApp.Models.Object;
 
@@ -34,9 +35,25 @@ namespace webApp.Controllers
         {
             return await _unitOfWork.Object.AllAsync();
         }
+        
+        // Get Paginated Objects /api/[controller]/{page} GET
+        [HttpGet("{page}")]
+        public async Task<JsonResult> GetP(int page)
+        {
+            PaginatedList<Object> paginatedList =
+                await PaginatedList<Object>.CreateAsync(_unitOfWork.Object.AllQuery(), page);
+            return new JsonResult(new
+            {
+                data = paginatedList,
+                page = paginatedList.PageIndex,
+                hasNext = paginatedList.HasNextPage,
+                hasPrev = paginatedList.HasPreviousPage,
+                totalPAge = paginatedList.TotalPages,
+            });
+        }
 
-        // Get Single Object /api/[controller]/{id} GET
-        [HttpGet("{id}")]
+        // Get Single Object /api/[controller]/single/{id} GET
+        [HttpGet("single/{id}")]
         public async Task<Object?> Get(int id)
         {
             return await _unitOfWork.Object.FindByIDAsync(id);

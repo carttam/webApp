@@ -1580,3 +1580,136 @@ System.IO.DirectoryNotFoundException: Could not find a part of the path '/img/te
 2022-01-07T19:17:22.4749691+03:30 0HMEHUJV4FN87:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 308.2113ms (afa2e885)
 2022-01-07T19:17:22.4760061+03:30 0HMEHUJV4FN87:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
 2022-01-07T19:17:22.4927247+03:30 0HMEHUJV4FN87:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object/image/temp.jpg - - - 200 145720 image/jpeg 534.8029ms (791a596a)
+2022-01-07T19:18:07.0761168+03:30 0HMEHUJV4FN8A:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-07T19:18:07.0970615+03:30 0HMEHUJV4FN8A:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T19:18:07.0990441+03:30 0HMEHUJV4FN8A:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-07T19:18:07.1059073+03:30 0HMEHUJV4FN8A:00000003 [INF] Request starting HTTP/2 POST https://localhost:7081/api/Categori - 0 (ca22a1cb)
+2022-01-07T19:18:07.1079637+03:30 0HMEHUJV4FN8A:00000003 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T19:18:07.1081951+03:30 0HMEHUJV4FN8A:00000003 [INF] Executing endpoint '"webApp.Controllers.CategoriController.Post (webApp)"' (500cc934)
+2022-01-07T19:18:07.1327269+03:30 0HMEHUJV4FN8A:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-07T19:18:07.1388533+03:30 0HMEHUJV4FN8A:00000003 [INF] Route matched with "{action = \"Post\", controller = \"Categori\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Categori]] Post()" on controller "webApp.Controllers.CategoriController" ("webApp"). (122b2fdf)
+2022-01-07T19:18:09.4154020+03:30 0HMEHUJV4FN8A:00000001 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-07T19:18:09.4155008+03:30 0HMEHUJV4FN8A:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-07T19:18:10.0629744+03:30 0HMEHUJV4FN8A:00000003 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. (4c53259e)
+2022-01-07T19:18:10.3125031+03:30 0HMEHUJV4FN8A:00000003 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"c\".\"CategoriID\", \"c\".\"title\", \"t\".\"SubCategoriID\", \"t\".\"CategoriID\", \"t\".\"image\", \"t\".\"title\", \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID0\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image0\", \"t\".\"price\", \"t\".\"title0\"
+FROM \"Categoris\" AS \"c\"
+LEFT JOIN (
+    SELECT \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\" AS \"SubCategoriID0\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\" AS \"image0\", \"o\".\"price\", \"o\".\"title\" AS \"title0\"
+    FROM \"SubCategoris\" AS \"s\"
+    LEFT JOIN \"Objects\" AS \"o\" ON \"s\".\"SubCategoriID\" = \"o\".\"SubCategoriID\"
+) AS \"t\" ON \"c\".\"CategoriID\" = \"t\".\"CategoriID\"
+ORDER BY \"c\".\"CategoriID\", \"t\".\"SubCategoriID\"" (0723d8ff)
+2022-01-07T19:18:10.3127565+03:30 0HMEHUJV4FN8A:00000001 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-07T19:18:10.5743632+03:30 0HMEHUJV4FN8A:00000001 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-07T19:18:10.5743579+03:30 0HMEHUJV4FN8A:00000003 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Categori, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-07T19:18:10.6502384+03:30 0HMEHUJV4FN8A:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 3517.3003ms (afa2e885)
+2022-01-07T19:18:10.6516340+03:30 0HMEHUJV4FN8A:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-07T19:18:10.6575261+03:30 0HMEHUJV4FN8A:00000003 [INF] Executed action "webApp.Controllers.CategoriController.Post (webApp)" in 3518.2755ms (afa2e885)
+2022-01-07T19:18:10.6576678+03:30 0HMEHUJV4FN8A:00000003 [INF] Executed endpoint '"webApp.Controllers.CategoriController.Post (webApp)"' (99874f2b)
+2022-01-07T19:18:10.6606107+03:30 0HMEHUJV4FN8A:00000003 [INF] Request finished HTTP/2 POST https://localhost:7081/api/Categori - 0 - 200 - application/json;+charset=utf-8 3554.1105ms (791a596a)
+2022-01-07T19:18:10.6612907+03:30 0HMEHUJV4FN8A:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 3585.3078ms (791a596a)
+2022-01-07T19:18:10.7429197+03:30 0HMEHUJV4FN87:00000003 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object/image/temp.jpg - - (ca22a1cb)
+2022-01-07T19:18:10.7434226+03:30 0HMEHUJV4FN87:00000003 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-07T19:18:10.7437286+03:30 0HMEHUJV4FN87:00000003 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get(System.String)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-07T19:18:10.7553874+03:30 0HMEHUJV4FN87:00000003 [INF] Executing "FileContentResult", sending file with download name '""' ... (3ade02d2)
+2022-01-07T19:18:10.7604758+03:30 0HMEHUJV4FN87:00000003 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 16.6438ms (afa2e885)
+2022-01-07T19:18:10.7607411+03:30 0HMEHUJV4FN87:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-07T19:18:10.7616654+03:30 0HMEHUJV4FN87:00000003 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object/image/temp.jpg - - - 200 145720 image/jpeg 18.7571ms (791a596a)
+2022-01-07T19:19:42.3726642+03:30 0HMEHUJV4FN8C:00000002 [INF] Request starting HTTP/1.1 POST https://localhost:7081/api/Object - 0 (ca22a1cb)
+2022-01-07T19:19:42.3730568+03:30 0HMEHUJV4FN8C:00000002 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Post (webApp)"' (500cc934)
+2022-01-07T19:19:42.4075004+03:30 0HMEHUJV4FN8C:00000002 [INF] Route matched with "{action = \"Post\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] Post(webApp.Models.Object, Microsoft.AspNetCore.Http.IFormFile)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-07T19:19:42.4239785+03:30 0HMEHUJV4FN8C:00000002 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2022-01-07T19:19:42.4279730+03:30 0HMEHUJV4FN8C:00000002 [INF] Executed action "webApp.Controllers.ObjectController.Post (webApp)" in 20.363ms (afa2e885)
+2022-01-07T19:19:42.4280747+03:30 0HMEHUJV4FN8C:00000002 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Post (webApp)"' (99874f2b)
+2022-01-07T19:19:42.4283526+03:30 0HMEHUJV4FN8C:00000002 [INF] Request finished HTTP/1.1 POST https://localhost:7081/api/Object - 0 - 400 - application/problem+json;+charset=utf-8 55.7356ms (791a596a)
+2022-01-07T19:21:44.4532010+03:30  [INF] Application is shutting down... (90f52c38)
+2022-01-07T20:05:48.4829684+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-07T20:05:48.4913362+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-07T20:05:48.5137761+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-07T20:05:48.5190211+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-07T20:05:48.5238369+03:30  [INF] Content root path: "/run/media/nop/F83652F73652B5FA/Projects/webApp/" (b5d60022)
+2022-01-07T20:05:55.6152388+03:30 0HMEHVF3EB4FE:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-07T20:05:55.6139792+03:30 0HMEHVF3EB4FE:00000003 [INF] Request starting HTTP/2 POST https://localhost:7081/api/Categori - 0 (ca22a1cb)
+2022-01-07T20:05:55.7406493+03:30 0HMEHVF3EB4FE:00000003 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T20:05:55.7482705+03:30 0HMEHVF3EB4FE:00000003 [INF] Executing endpoint '"webApp.Controllers.CategoriController.Post (webApp)"' (500cc934)
+2022-01-07T20:05:55.7748504+03:30 0HMEHVF3EB4FE:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T20:05:55.7752742+03:30 0HMEHVF3EB4FE:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-07T20:05:55.8146346+03:30 0HMEHVF3EB4FE:00000003 [INF] Route matched with "{action = \"Post\", controller = \"Categori\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Categori]] Post()" on controller "webApp.Controllers.CategoriController" ("webApp"). (122b2fdf)
+2022-01-07T20:05:55.8146644+03:30 0HMEHVF3EB4FE:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-07T20:05:57.4961806+03:30 0HMEHVF3EB4FE:00000001 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-07T20:05:57.4963160+03:30 0HMEHVF3EB4FE:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-07T20:05:57.9798569+03:30 0HMEHVF3EB4FE:00000003 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. (4c53259e)
+2022-01-07T20:05:58.1473610+03:30 0HMEHVF3EB4FE:00000001 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-07T20:05:58.3028954+03:30 0HMEHVF3EB4FE:00000003 [INF] Executed DbCommand ("195"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"c\".\"CategoriID\", \"c\".\"title\", \"t\".\"SubCategoriID\", \"t\".\"CategoriID\", \"t\".\"image\", \"t\".\"title\", \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID0\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image0\", \"t\".\"price\", \"t\".\"title0\"
+FROM \"Categoris\" AS \"c\"
+LEFT JOIN (
+    SELECT \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\" AS \"SubCategoriID0\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\" AS \"image0\", \"o\".\"price\", \"o\".\"title\" AS \"title0\"
+    FROM \"SubCategoris\" AS \"s\"
+    LEFT JOIN \"Objects\" AS \"o\" ON \"s\".\"SubCategoriID\" = \"o\".\"SubCategoriID\"
+) AS \"t\" ON \"c\".\"CategoriID\" = \"t\".\"CategoriID\"
+ORDER BY \"c\".\"CategoriID\", \"t\".\"SubCategoriID\"" (0723d8ff)
+2022-01-07T20:05:58.4302785+03:30 0HMEHVF3EB4FE:00000001 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-07T20:05:58.4302883+03:30 0HMEHVF3EB4FE:00000003 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Categori, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-07T20:05:58.5650342+03:30 0HMEHVF3EB4FE:00000003 [INF] Executed action "webApp.Controllers.CategoriController.Post (webApp)" in 2738.6883ms (afa2e885)
+2022-01-07T20:05:58.5665722+03:30 0HMEHVF3EB4FE:00000003 [INF] Executed endpoint '"webApp.Controllers.CategoriController.Post (webApp)"' (99874f2b)
+2022-01-07T20:05:58.5930682+03:30 0HMEHVF3EB4FE:00000003 [INF] Request finished HTTP/2 POST https://localhost:7081/api/Categori - 0 - 200 - application/json;+charset=utf-8 2984.9500ms (791a596a)
+2022-01-07T20:06:04.8043638+03:30 0HMEHVF3EB4FE:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 8988.5884ms (afa2e885)
+2022-01-07T20:06:04.8046322+03:30 0HMEHVF3EB4FE:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-07T20:06:04.8063491+03:30 0HMEHVF3EB4FE:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 9197.7278ms (791a596a)
+2022-01-07T20:06:07.8650768+03:30 0HMEHVF3EB4FG:00000001 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object/image/temp.jpg - - (ca22a1cb)
+2022-01-07T20:06:07.8707262+03:30 0HMEHVF3EB4FG:00000001 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-07T20:06:07.9032586+03:30 0HMEHVF3EB4FG:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get(System.String)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-07T20:06:07.9423166+03:30 0HMEHVF3EB4FG:00000001 [INF] Executing "FileContentResult", sending file with download name '""' ... (3ade02d2)
+2022-01-07T20:06:07.9496073+03:30 0HMEHVF3EB4FG:00000001 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 46.1795ms (afa2e885)
+2022-01-07T20:06:07.9497218+03:30 0HMEHVF3EB4FG:00000001 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-07T20:06:07.9499490+03:30 0HMEHVF3EB4FG:00000001 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object/image/temp.jpg - - - 200 145720 image/jpeg 84.9010ms (791a596a)
+2022-01-07T20:06:57.5075666+03:30 0HMEHVF3EB4FE:00000005 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object - - (ca22a1cb)
+2022-01-07T20:06:57.5084313+03:30 0HMEHVF3EB4FE:00000007 [INF] Request starting HTTP/2 POST https://localhost:7081/api/Categori - 0 (ca22a1cb)
+2022-01-07T20:06:57.5085440+03:30 0HMEHVF3EB4FE:00000005 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T20:06:57.5088611+03:30 0HMEHVF3EB4FE:00000005 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-07T20:06:57.5092416+03:30 0HMEHVF3EB4FE:00000005 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get()" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-07T20:06:57.5090177+03:30 0HMEHVF3EB4FE:00000007 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T20:06:57.5094593+03:30 0HMEHVF3EB4FE:00000007 [INF] Executing endpoint '"webApp.Controllers.CategoriController.Post (webApp)"' (500cc934)
+2022-01-07T20:06:57.5097120+03:30 0HMEHVF3EB4FE:00000007 [INF] Route matched with "{action = \"Post\", controller = \"Categori\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Categori]] Post()" on controller "webApp.Controllers.CategoriController" ("webApp"). (122b2fdf)
+2022-01-07T20:06:57.6551444+03:30 0HMEHVF3EB4FE:00000005 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-07T20:06:57.6551830+03:30 0HMEHVF3EB4FE:00000007 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-07T20:06:57.6667164+03:30 0HMEHVF3EB4FE:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-07T20:06:57.6812164+03:30 0HMEHVF3EB4FE:00000007 [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"c\".\"CategoriID\", \"c\".\"title\", \"t\".\"SubCategoriID\", \"t\".\"CategoriID\", \"t\".\"image\", \"t\".\"title\", \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID0\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image0\", \"t\".\"price\", \"t\".\"title0\"
+FROM \"Categoris\" AS \"c\"
+LEFT JOIN (
+    SELECT \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\" AS \"SubCategoriID0\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\" AS \"image0\", \"o\".\"price\", \"o\".\"title\" AS \"title0\"
+    FROM \"SubCategoris\" AS \"s\"
+    LEFT JOIN \"Objects\" AS \"o\" ON \"s\".\"SubCategoriID\" = \"o\".\"SubCategoriID\"
+) AS \"t\" ON \"c\".\"CategoriID\" = \"t\".\"CategoriID\"
+ORDER BY \"c\".\"CategoriID\", \"t\".\"SubCategoriID\"" (0723d8ff)
+2022-01-07T20:06:57.7844459+03:30 0HMEHVF3EB4FE:00000007 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Categori, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-07T20:06:57.8056032+03:30 0HMEHVF3EB4FE:00000007 [INF] Executed action "webApp.Controllers.CategoriController.Post (webApp)" in 295.8024ms (afa2e885)
+2022-01-07T20:06:57.8057320+03:30 0HMEHVF3EB4FE:00000007 [INF] Executed endpoint '"webApp.Controllers.CategoriController.Post (webApp)"' (99874f2b)
+2022-01-07T20:06:57.8059784+03:30 0HMEHVF3EB4FE:00000007 [INF] Request finished HTTP/2 POST https://localhost:7081/api/Categori - 0 - 200 - application/json;+charset=utf-8 297.6246ms (791a596a)
+2022-01-07T20:06:57.8402453+03:30 0HMEHVF3EB4FE:00000005 [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-07T20:07:03.7075678+03:30 0HMEHVF3EB4FE:00000005 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 6198.2338ms (afa2e885)
+2022-01-07T20:07:03.7077264+03:30 0HMEHVF3EB4FE:00000005 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-07T20:07:03.7079358+03:30 0HMEHVF3EB4FE:00000005 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object - - - 200 - application/json;+charset=utf-8 6200.4124ms (791a596a)
+2022-01-07T20:07:06.7236178+03:30 0HMEHVF3EB4FG:00000003 [INF] Request starting HTTP/2 GET https://localhost:7081/api/Object/image/temp.jpg - - (ca22a1cb)
+2022-01-07T20:07:06.7240654+03:30 0HMEHVF3EB4FG:00000003 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-07T20:07:06.7242699+03:30 0HMEHVF3EB4FG:00000003 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get(System.String)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-07T20:07:06.7269761+03:30 0HMEHVF3EB4FG:00000003 [INF] Executing "FileContentResult", sending file with download name '""' ... (3ade02d2)
+2022-01-07T20:07:06.7356991+03:30 0HMEHVF3EB4FG:00000003 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 11.3412ms (afa2e885)
+2022-01-07T20:07:06.7358298+03:30 0HMEHVF3EB4FG:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-07T20:07:06.7361023+03:30 0HMEHVF3EB4FG:00000003 [INF] Request finished HTTP/2 GET https://localhost:7081/api/Object/image/temp.jpg - - - 200 145720 image/jpeg 12.4548ms (791a596a)
+2022-01-07T20:07:44.6702355+03:30  [INF] Application is shutting down... (90f52c38)

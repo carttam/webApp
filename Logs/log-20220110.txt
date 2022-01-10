@@ -1,0 +1,438 @@
+2022-01-10T11:04:06.5949555+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-10T11:04:06.6018343+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-10T11:04:06.6140332+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-10T11:04:06.6146695+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-10T11:04:06.6147185+03:30  [INF] Content root path: "/run/media/nop/D/Projects/webApp/" (b5d60022)
+2022-01-10T11:05:29.8912446+03:30  [INF] Application is shutting down... (90f52c38)
+2022-01-10T11:18:33.4889407+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-10T11:18:33.5111129+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-10T11:18:33.5447922+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-10T11:18:33.5457306+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-10T11:18:33.5458206+03:30  [INF] Content root path: "/run/media/nop/D/Projects/webApp/" (b5d60022)
+2022-01-10T11:19:12.8502423+03:30 0HMEK1MONGDG4:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/1600 application/json 209 (ca22a1cb)
+2022-01-10T11:19:12.9873274+03:30 0HMEK1MONGDG4:00000002 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:19:13.0430218+03:30 0HMEK1MONGDG4:00000002 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.Object] Get(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:19:15.2939469+03:30 0HMEK1MONGDG4:00000002 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:19:16.6456995+03:30 0HMEK1MONGDG4:00000002 [INF] Executed DbCommand ("50"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"
+WHERE \"o\".\"ObjectID\" = @__id_0
+LIMIT 1" (0723d8ff)
+2022-01-10T11:19:16.8926853+03:30 0HMEK1MONGDG4:00000002 [INF] Executing "ObjectResult", writing value of type '"webApp.Models.Object"'. (605b4265)
+2022-01-10T11:19:16.9973741+03:30 0HMEK1MONGDG4:00000002 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 3940.6209ms (afa2e885)
+2022-01-10T11:19:16.9976369+03:30 0HMEK1MONGDG4:00000002 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:19:17.0113816+03:30 0HMEK1MONGDG4:00000002 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/1600 application/json 209 - 200 - application/json;+charset=utf-8 4167.0102ms (791a596a)
+2022-01-10T11:19:33.2247290+03:30  [INF] Application is shutting down... (90f52c38)
+2022-01-10T11:23:53.3903517+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-10T11:23:53.3983734+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-10T11:23:53.4093403+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-10T11:23:53.4102343+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-10T11:23:53.4103230+03:30  [INF] Content root path: "/run/media/nop/D/Projects/webApp/" (b5d60022)
+2022-01-10T11:25:23.9573491+03:30 0HMEK1Q7B3ND1:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/1600 application/json 209 (ca22a1cb)
+2022-01-10T11:25:24.0877742+03:30 0HMEK1Q7B3ND1:00000002 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:25:24.1412900+03:30 0HMEK1Q7B3ND1:00000002 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.Object] Get(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:25:25.8107780+03:30 0HMEK1Q7B3ND1:00000002 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:25:26.7107758+03:30 0HMEK1Q7B3ND1:00000002 [INF] Executed DbCommand ("110"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"
+WHERE \"o\".\"ObjectID\" = @__id_0
+LIMIT 1" (0723d8ff)
+2022-01-10T11:25:26.9684580+03:30 0HMEK1Q7B3ND1:00000002 [INF] Executing "ObjectResult", writing value of type '"webApp.Models.Object"'. (605b4265)
+2022-01-10T11:25:27.0399354+03:30 0HMEK1Q7B3ND1:00000002 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 2886.691ms (afa2e885)
+2022-01-10T11:25:27.0401127+03:30 0HMEK1Q7B3ND1:00000002 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:25:27.0507881+03:30 0HMEK1Q7B3ND1:00000002 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/1600 application/json 209 - 200 - application/json;+charset=utf-8 3098.4781ms (791a596a)
+2022-01-10T11:25:45.0671579+03:30 0HMEK1Q7B3ND1:00000003 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/1600 application/json 209 (ca22a1cb)
+2022-01-10T11:25:45.0693547+03:30 0HMEK1Q7B3ND1:00000003 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:25:45.0697454+03:30 0HMEK1Q7B3ND1:00000003 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.Object] Get(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:25:45.0870672+03:30 0HMEK1Q7B3ND1:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:25:45.0936856+03:30 0HMEK1Q7B3ND1:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"
+WHERE \"o\".\"ObjectID\" = @__id_0
+LIMIT 1" (0723d8ff)
+2022-01-10T11:25:45.0955580+03:30 0HMEK1Q7B3ND1:00000003 [INF] Executing "ObjectResult", writing value of type '"webApp.Models.Object"'. (605b4265)
+2022-01-10T11:25:45.0967812+03:30 0HMEK1Q7B3ND1:00000003 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 26.9048ms (afa2e885)
+2022-01-10T11:25:45.0973610+03:30 0HMEK1Q7B3ND1:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:25:45.0988082+03:30 0HMEK1Q7B3ND1:00000003 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/1600 application/json 209 - 200 - application/json;+charset=utf-8 31.6593ms (791a596a)
+2022-01-10T11:25:50.4216952+03:30 0HMEK1Q7B3ND1:00000004 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/1601 application/json 209 (ca22a1cb)
+2022-01-10T11:25:50.4231691+03:30 0HMEK1Q7B3ND1:00000004 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:25:50.4234453+03:30 0HMEK1Q7B3ND1:00000004 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.Object] Get(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:25:50.5406642+03:30 0HMEK1Q7B3ND1:00000004 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:25:50.5448842+03:30 0HMEK1Q7B3ND1:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"
+WHERE \"o\".\"ObjectID\" = @__id_0
+LIMIT 1" (0723d8ff)
+2022-01-10T11:25:50.5460158+03:30 0HMEK1Q7B3ND1:00000004 [INF] Executing "ObjectResult", writing value of type '"webApp.Models.Object"'. (605b4265)
+2022-01-10T11:25:50.5468474+03:30 0HMEK1Q7B3ND1:00000004 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 123.3156ms (afa2e885)
+2022-01-10T11:25:50.5470147+03:30 0HMEK1Q7B3ND1:00000004 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:25:50.5472243+03:30 0HMEK1Q7B3ND1:00000004 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/1601 application/json 209 - 200 - application/json;+charset=utf-8 125.5347ms (791a596a)
+2022-01-10T11:25:57.3381359+03:30 0HMEK1Q7B3ND1:00000005 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/1 application/json 209 (ca22a1cb)
+2022-01-10T11:25:57.3384036+03:30 0HMEK1Q7B3ND1:00000005 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:25:57.3385289+03:30 0HMEK1Q7B3ND1:00000005 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.Object] Get(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:25:57.3399348+03:30 0HMEK1Q7B3ND1:00000005 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:25:57.3413163+03:30 0HMEK1Q7B3ND1:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"
+WHERE \"o\".\"ObjectID\" = @__id_0
+LIMIT 1" (0723d8ff)
+2022-01-10T11:25:57.3416928+03:30 0HMEK1Q7B3ND1:00000005 [INF] Executing "ObjectResult", writing value of type '"null"'. (605b4265)
+2022-01-10T11:25:57.3419043+03:30 0HMEK1Q7B3ND1:00000005 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 3.2908ms (afa2e885)
+2022-01-10T11:25:57.3419366+03:30 0HMEK1Q7B3ND1:00000005 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:25:57.3470058+03:30 0HMEK1Q7B3ND1:00000005 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/1 application/json 209 - 204 0 - 8.9362ms (791a596a)
+2022-01-10T11:26:10.3824630+03:30 0HMEK1Q7B3ND1:00000006 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/ALL/0 application/json 209 (ca22a1cb)
+2022-01-10T11:26:10.3828039+03:30 0HMEK1Q7B3ND1:00000006 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:26:10.3906400+03:30 0HMEK1Q7B3ND1:00000006 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get(System.String, Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:26:10.4039368+03:30 0HMEK1Q7B3ND1:00000006 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:26:10.4484811+03:30 0HMEK1Q7B3ND1:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:26:10.4775602+03:30 0HMEK1Q7B3ND1:00000006 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2022-01-10T11:26:10.4788500+03:30 0HMEK1Q7B3ND1:00000006 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2022-01-10T11:26:10.5400754+03:30 0HMEK1Q7B3ND1:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:26:10.5497288+03:30 0HMEK1Q7B3ND1:00000006 [INF] Executing "ObjectResult", writing value of type '"webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-10T11:26:10.5888891+03:30 0HMEK1Q7B3ND1:00000006 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 198.0944ms (afa2e885)
+2022-01-10T11:26:10.5897486+03:30 0HMEK1Q7B3ND1:00000006 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:26:10.5935656+03:30 0HMEK1Q7B3ND1:00000006 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/ALL/0 application/json 209 - 200 - application/json;+charset=utf-8 211.1179ms (791a596a)
+2022-01-10T11:26:25.9731424+03:30 0HMEK1Q7B3ND1:00000007 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/ALL/1 application/json 209 (ca22a1cb)
+2022-01-10T11:26:25.9733910+03:30 0HMEK1Q7B3ND1:00000007 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:26:25.9735159+03:30 0HMEK1Q7B3ND1:00000007 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get(System.String, Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:26:25.9752882+03:30 0HMEK1Q7B3ND1:00000007 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:26:25.9764676+03:30 0HMEK1Q7B3ND1:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:26:25.9790802+03:30 0HMEK1Q7B3ND1:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:26:25.9829374+03:30 0HMEK1Q7B3ND1:00000007 [INF] Executing "ObjectResult", writing value of type '"webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-10T11:26:25.9908254+03:30 0HMEK1Q7B3ND1:00000007 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 17.248ms (afa2e885)
+2022-01-10T11:26:25.9911565+03:30 0HMEK1Q7B3ND1:00000007 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:26:25.9924160+03:30 0HMEK1Q7B3ND1:00000007 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/ALL/1 application/json 209 - 200 - application/json;+charset=utf-8 19.2502ms (791a596a)
+2022-01-10T11:26:30.9420680+03:30 0HMEK1Q7B3ND1:00000008 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/ALL/2 application/json 209 (ca22a1cb)
+2022-01-10T11:26:30.9423025+03:30 0HMEK1Q7B3ND1:00000008 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:26:30.9424256+03:30 0HMEK1Q7B3ND1:00000008 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get(System.String, Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:26:30.9439212+03:30 0HMEK1Q7B3ND1:00000008 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:26:30.9474819+03:30 0HMEK1Q7B3ND1:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:26:30.9514840+03:30 0HMEK1Q7B3ND1:00000008 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2022-01-10T11:26:30.9520476+03:30 0HMEK1Q7B3ND1:00000008 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2022-01-10T11:26:30.9645979+03:30 0HMEK1Q7B3ND1:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_0 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:26:30.9689164+03:30 0HMEK1Q7B3ND1:00000008 [INF] Executing "ObjectResult", writing value of type '"webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-10T11:26:30.9708296+03:30 0HMEK1Q7B3ND1:00000008 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 28.3072ms (afa2e885)
+2022-01-10T11:26:30.9711702+03:30 0HMEK1Q7B3ND1:00000008 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:26:30.9717906+03:30 0HMEK1Q7B3ND1:00000008 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/ALL/2 application/json 209 - 200 - application/json;+charset=utf-8 29.5591ms (791a596a)
+2022-01-10T11:26:35.7401792+03:30 0HMEK1Q7B3ND1:00000009 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/ALL/1 application/json 209 (ca22a1cb)
+2022-01-10T11:26:35.7405179+03:30 0HMEK1Q7B3ND1:00000009 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:26:35.7406238+03:30 0HMEK1Q7B3ND1:00000009 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get(System.String, Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:26:35.7437465+03:30 0HMEK1Q7B3ND1:00000009 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:26:35.7480637+03:30 0HMEK1Q7B3ND1:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:26:35.7542877+03:30 0HMEK1Q7B3ND1:00000009 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:26:35.7572840+03:30 0HMEK1Q7B3ND1:00000009 [INF] Executing "ObjectResult", writing value of type '"webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-10T11:26:35.7588065+03:30 0HMEK1Q7B3ND1:00000009 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 18.1188ms (afa2e885)
+2022-01-10T11:26:35.7588837+03:30 0HMEK1Q7B3ND1:00000009 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:26:35.7590695+03:30 0HMEK1Q7B3ND1:00000009 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/ALL/1 application/json 209 - 200 - application/json;+charset=utf-8 18.8773ms (791a596a)
+2022-01-10T11:26:38.1105396+03:30 0HMEK1Q7B3ND1:0000000A [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/ALL/0 application/json 209 (ca22a1cb)
+2022-01-10T11:26:38.1107669+03:30 0HMEK1Q7B3ND1:0000000A [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:26:38.1109101+03:30 0HMEK1Q7B3ND1:0000000A [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get(System.String, Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:26:38.1125769+03:30 0HMEK1Q7B3ND1:0000000A [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:26:38.1140054+03:30 0HMEK1Q7B3ND1:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:26:38.1153964+03:30 0HMEK1Q7B3ND1:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:26:38.1181102+03:30 0HMEK1Q7B3ND1:0000000A [INF] Executing "ObjectResult", writing value of type '"webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-10T11:26:38.1203403+03:30 0HMEK1Q7B3ND1:0000000A [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 9.3694ms (afa2e885)
+2022-01-10T11:26:38.1204813+03:30 0HMEK1Q7B3ND1:0000000A [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:26:38.1243614+03:30 0HMEK1Q7B3ND1:0000000A [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/ALL/0 application/json 209 - 200 - application/json;+charset=utf-8 13.8604ms (791a596a)
+2022-01-10T11:26:40.5246667+03:30 0HMEK1Q7B3ND1:0000000B [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/ALL/3 application/json 209 (ca22a1cb)
+2022-01-10T11:26:40.5248449+03:30 0HMEK1Q7B3ND1:0000000B [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:26:40.5249487+03:30 0HMEK1Q7B3ND1:0000000B [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get(System.String, Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:26:40.5260471+03:30 0HMEK1Q7B3ND1:0000000B [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:26:40.5270278+03:30 0HMEK1Q7B3ND1:0000000B [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:26:40.5310295+03:30 0HMEK1Q7B3ND1:0000000B [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:26:40.5342398+03:30 0HMEK1Q7B3ND1:0000000B [INF] Executing "ObjectResult", writing value of type '"webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-10T11:26:40.5384865+03:30 0HMEK1Q7B3ND1:0000000B [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 13.4852ms (afa2e885)
+2022-01-10T11:26:40.5386344+03:30 0HMEK1Q7B3ND1:0000000B [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:26:40.5391495+03:30 0HMEK1Q7B3ND1:0000000B [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/ALL/3 application/json 209 - 200 - application/json;+charset=utf-8 14.1651ms (791a596a)
+2022-01-10T11:26:44.1915206+03:30 0HMEK1Q7B3ND1:0000000C [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/ALL/700 application/json 209 (ca22a1cb)
+2022-01-10T11:26:44.1918455+03:30 0HMEK1Q7B3ND1:0000000C [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:26:44.1920431+03:30 0HMEK1Q7B3ND1:0000000C [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get(System.String, Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:26:44.1935214+03:30 0HMEK1Q7B3ND1:0000000C [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:26:44.1944458+03:30 0HMEK1Q7B3ND1:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:26:44.1972883+03:30 0HMEK1Q7B3ND1:0000000C [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:26:44.1983841+03:30 0HMEK1Q7B3ND1:0000000C [INF] Executing "ObjectResult", writing value of type '"webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-10T11:26:44.1995049+03:30 0HMEK1Q7B3ND1:0000000C [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 7.3923ms (afa2e885)
+2022-01-10T11:26:44.1999883+03:30 0HMEK1Q7B3ND1:0000000C [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:26:44.2002282+03:30 0HMEK1Q7B3ND1:0000000C [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/ALL/700 application/json 209 - 200 - application/json;+charset=utf-8 8.7188ms (791a596a)
+2022-01-10T11:27:02.5983543+03:30  [INF] Application is shutting down... (90f52c38)
+2022-01-10T11:38:59.8376176+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-10T11:38:59.8451587+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-10T11:38:59.8546324+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-10T11:38:59.8553186+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-10T11:38:59.8554265+03:30  [INF] Content root path: "/run/media/nop/D/Projects/webApp/" (b5d60022)
+2022-01-10T11:39:23.4410758+03:30 0HMEK221H2038:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/ALL/ application/json 209 (ca22a1cb)
+2022-01-10T11:39:23.5672400+03:30 0HMEK221H2038:00000002 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:39:23.6204821+03:30 0HMEK221H2038:00000002 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.Object] Get(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:39:23.8394849+03:30 0HMEK221H2038:00000002 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2022-01-10T11:39:23.8798686+03:30 0HMEK221H2038:00000002 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 249.4396ms (afa2e885)
+2022-01-10T11:39:23.8800732+03:30 0HMEK221H2038:00000002 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:39:23.8863994+03:30 0HMEK221H2038:00000002 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/ALL/ application/json 209 - 400 - application/problem+json;+charset=utf-8 450.5436ms (791a596a)
+2022-01-10T11:39:33.6295002+03:30 0HMEK221H2038:00000003 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/ALL/1 application/json 209 (ca22a1cb)
+2022-01-10T11:39:33.6378527+03:30 0HMEK221H2038:00000003 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:39:33.6466496+03:30 0HMEK221H2038:00000003 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] Get(System.String, Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:39:35.0916469+03:30 0HMEK221H2038:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:39:35.7293949+03:30 0HMEK221H2038:00000003 [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:39:35.8631331+03:30 0HMEK221H2038:00000003 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2022-01-10T11:39:35.8648953+03:30 0HMEK221H2038:00000003 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2022-01-10T11:39:36.0797534+03:30 0HMEK221H2038:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:39:36.1025329+03:30 0HMEK221H2038:00000003 [INF] Executing "ObjectResult", writing value of type '"webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-10T11:39:36.1705764+03:30 0HMEK221H2038:00000003 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 2523.7521ms (afa2e885)
+2022-01-10T11:39:36.1718542+03:30 0HMEK221H2038:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:39:36.1799646+03:30 0HMEK221H2038:00000003 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/ALL/1 application/json 209 - 200 - application/json;+charset=utf-8 2550.4577ms (791a596a)
+2022-01-10T11:41:03.7870112+03:30  [INF] Application is shutting down... (90f52c38)
+2022-01-10T11:45:22.7957063+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-10T11:45:22.8034348+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-10T11:45:22.8134639+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-10T11:45:22.8142203+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-10T11:45:22.8143140+03:30  [INF] Content root path: "/run/media/nop/D/Projects/webApp/" (b5d60022)
+2022-01-10T11:45:29.9525399+03:30 0HMEK25ENI0CB:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/1 application/json 209 (ca22a1cb)
+2022-01-10T11:45:30.1265990+03:30 0HMEK25ENI0CB:00000002 [INF] Executing endpoint '"webApp.Controllers.ObjectController.GetP (webApp)"' (500cc934)
+2022-01-10T11:45:30.1885432+03:30 0HMEK25ENI0CB:00000002 [INF] Route matched with "{action = \"GetP\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] GetP(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:45:32.5299429+03:30 0HMEK25ENI0CB:00000002 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:45:33.5342153+03:30 0HMEK25ENI0CB:00000002 [INF] Executed DbCommand ("74"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:45:33.6788303+03:30 0HMEK25ENI0CB:00000002 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2022-01-10T11:45:33.6797936+03:30 0HMEK25ENI0CB:00000002 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2022-01-10T11:45:33.9142102+03:30 0HMEK25ENI0CB:00000002 [INF] Executed DbCommand ("7"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:45:33.9451755+03:30 0HMEK25ENI0CB:00000002 [INF] Executing "ObjectResult", writing value of type '"webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-10T11:45:34.0495992+03:30 0HMEK25ENI0CB:00000002 [INF] Executed action "webApp.Controllers.ObjectController.GetP (webApp)" in 3851.1151ms (afa2e885)
+2022-01-10T11:45:34.0498250+03:30 0HMEK25ENI0CB:00000002 [INF] Executed endpoint '"webApp.Controllers.ObjectController.GetP (webApp)"' (99874f2b)
+2022-01-10T11:45:34.0625274+03:30 0HMEK25ENI0CB:00000002 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/1 application/json 209 - 200 - application/json;+charset=utf-8 4119.4630ms (791a596a)
+2022-01-10T11:45:40.1425149+03:30 0HMEK25ENI0CB:00000003 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/3 application/json 209 (ca22a1cb)
+2022-01-10T11:45:40.1459376+03:30 0HMEK25ENI0CB:00000003 [INF] Executing endpoint '"webApp.Controllers.ObjectController.GetP (webApp)"' (500cc934)
+2022-01-10T11:45:40.1464041+03:30 0HMEK25ENI0CB:00000003 [INF] Route matched with "{action = \"GetP\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[webApp.Models.Object]] GetP(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:45:40.1632993+03:30 0HMEK25ENI0CB:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:45:40.1688720+03:30 0HMEK25ENI0CB:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:45:40.1713112+03:30 0HMEK25ENI0CB:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:45:40.1764021+03:30 0HMEK25ENI0CB:00000003 [INF] Executing "ObjectResult", writing value of type '"webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-10T11:45:40.1823646+03:30 0HMEK25ENI0CB:00000003 [INF] Executed action "webApp.Controllers.ObjectController.GetP (webApp)" in 35.7077ms (afa2e885)
+2022-01-10T11:45:40.1825451+03:30 0HMEK25ENI0CB:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.GetP (webApp)"' (99874f2b)
+2022-01-10T11:45:40.1830400+03:30 0HMEK25ENI0CB:00000003 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/3 application/json 209 - 200 - application/json;+charset=utf-8 40.5130ms (791a596a)
+2022-01-10T11:45:48.1433042+03:30 0HMEK25ENI0CB:00000004 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/single/1601 application/json 209 (ca22a1cb)
+2022-01-10T11:45:48.1452901+03:30 0HMEK25ENI0CB:00000004 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:45:48.1548308+03:30 0HMEK25ENI0CB:00000004 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.Object] Get(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:45:48.2696508+03:30 0HMEK25ENI0CB:00000004 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:45:48.3132832+03:30 0HMEK25ENI0CB:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"
+WHERE \"o\".\"ObjectID\" = @__id_0
+LIMIT 1" (0723d8ff)
+2022-01-10T11:45:48.5065752+03:30 0HMEK25ENI0CB:00000004 [INF] Executing "ObjectResult", writing value of type '"webApp.Models.Object"'. (605b4265)
+2022-01-10T11:45:48.5070290+03:30 0HMEK25ENI0CB:00000004 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 351.2708ms (afa2e885)
+2022-01-10T11:45:48.5070884+03:30 0HMEK25ENI0CB:00000004 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:45:48.5073095+03:30 0HMEK25ENI0CB:00000004 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/single/1601 application/json 209 - 200 - application/json;+charset=utf-8 364.0554ms (791a596a)
+2022-01-10T11:45:54.2858926+03:30  [INF] Application is shutting down... (90f52c38)
+2022-01-10T11:50:09.2807152+03:30  [INF] Now listening on: "https://localhost:7081" (d826f4b8)
+2022-01-10T11:50:09.2891795+03:30  [INF] Now listening on: "http://localhost:5213" (d826f4b8)
+2022-01-10T11:50:09.2995814+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-10T11:50:09.3002192+03:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-10T11:50:09.3002804+03:30  [INF] Content root path: "/run/media/nop/D/Projects/webApp/" (b5d60022)
+2022-01-10T11:50:16.3559699+03:30 0HMEK2843H5PJ:00000002 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/single/1601 application/json 209 (ca22a1cb)
+2022-01-10T11:50:16.4847877+03:30 0HMEK2843H5PJ:00000002 [INF] Executing endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (500cc934)
+2022-01-10T11:50:16.5445511+03:30 0HMEK2843H5PJ:00000002 [INF] Route matched with "{action = \"Get\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[webApp.Models.Object] Get(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:50:18.4062040+03:30 0HMEK2843H5PJ:00000002 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:50:19.2989687+03:30 0HMEK2843H5PJ:00000002 [INF] Executed DbCommand ("65"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM \"Objects\" AS \"o\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"o\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"o\".\"AttributeID\" = \"a\".\"AttributeID\"
+WHERE \"o\".\"ObjectID\" = @__id_0
+LIMIT 1" (0723d8ff)
+2022-01-10T11:50:19.5307247+03:30 0HMEK2843H5PJ:00000002 [INF] Executing "ObjectResult", writing value of type '"webApp.Models.Object"'. (605b4265)
+2022-01-10T11:50:19.6073367+03:30 0HMEK2843H5PJ:00000002 [INF] Executed action "webApp.Controllers.ObjectController.Get (webApp)" in 3050.427ms (afa2e885)
+2022-01-10T11:50:19.6075334+03:30 0HMEK2843H5PJ:00000002 [INF] Executed endpoint '"webApp.Controllers.ObjectController.Get (webApp)"' (99874f2b)
+2022-01-10T11:50:19.6189014+03:30 0HMEK2843H5PJ:00000002 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/single/1601 application/json 209 - 200 - application/json;+charset=utf-8 3269.1151ms (791a596a)
+2022-01-10T11:50:22.9849709+03:30 0HMEK2843H5PJ:00000003 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/1601 application/json 209 (ca22a1cb)
+2022-01-10T11:50:22.9889967+03:30 0HMEK2843H5PJ:00000003 [INF] Executing endpoint '"webApp.Controllers.ObjectController.GetP (webApp)"' (500cc934)
+2022-01-10T11:50:22.9963032+03:30 0HMEK2843H5PJ:00000003 [INF] Route matched with "{action = \"GetP\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GetP(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:50:23.0180280+03:30 0HMEK2843H5PJ:00000003 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:50:23.0571896+03:30 0HMEK2843H5PJ:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:50:23.0828920+03:30 0HMEK2843H5PJ:00000003 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2022-01-10T11:50:23.0837218+03:30 0HMEK2843H5PJ:00000003 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2022-01-10T11:50:23.1349916+03:30 0HMEK2843H5PJ:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:50:23.1394109+03:30 0HMEK2843H5PJ:00000003 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType0`5[[webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2022-01-10T11:50:23.1467276+03:30 0HMEK2843H5PJ:00000003 [INF] Executed action "webApp.Controllers.ObjectController.GetP (webApp)" in 150.2512ms (afa2e885)
+2022-01-10T11:50:23.1468733+03:30 0HMEK2843H5PJ:00000003 [INF] Executed endpoint '"webApp.Controllers.ObjectController.GetP (webApp)"' (99874f2b)
+2022-01-10T11:50:23.1473485+03:30 0HMEK2843H5PJ:00000003 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/1601 application/json 209 - 200 - application/json;+charset=utf-8 162.3737ms (791a596a)
+2022-01-10T11:50:33.0190499+03:30 0HMEK2843H5PJ:00000004 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/16 application/json 209 (ca22a1cb)
+2022-01-10T11:50:33.0213308+03:30 0HMEK2843H5PJ:00000004 [INF] Executing endpoint '"webApp.Controllers.ObjectController.GetP (webApp)"' (500cc934)
+2022-01-10T11:50:33.0215755+03:30 0HMEK2843H5PJ:00000004 [INF] Route matched with "{action = \"GetP\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GetP(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:50:33.1296522+03:30 0HMEK2843H5PJ:00000004 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:50:33.1373055+03:30 0HMEK2843H5PJ:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:50:33.1398721+03:30 0HMEK2843H5PJ:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:50:33.1412273+03:30 0HMEK2843H5PJ:00000004 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType0`5[[webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2022-01-10T11:50:33.1426379+03:30 0HMEK2843H5PJ:00000004 [INF] Executed action "webApp.Controllers.ObjectController.GetP (webApp)" in 120.944ms (afa2e885)
+2022-01-10T11:50:33.1435161+03:30 0HMEK2843H5PJ:00000004 [INF] Executed endpoint '"webApp.Controllers.ObjectController.GetP (webApp)"' (99874f2b)
+2022-01-10T11:50:33.1446628+03:30 0HMEK2843H5PJ:00000004 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/16 application/json 209 - 200 - application/json;+charset=utf-8 125.7523ms (791a596a)
+2022-01-10T11:50:34.7103934+03:30 0HMEK2843H5PJ:00000005 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/15 application/json 209 (ca22a1cb)
+2022-01-10T11:50:34.7107849+03:30 0HMEK2843H5PJ:00000005 [INF] Executing endpoint '"webApp.Controllers.ObjectController.GetP (webApp)"' (500cc934)
+2022-01-10T11:50:34.7109097+03:30 0HMEK2843H5PJ:00000005 [INF] Route matched with "{action = \"GetP\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GetP(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:50:34.7124405+03:30 0HMEK2843H5PJ:00000005 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:50:34.7137852+03:30 0HMEK2843H5PJ:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:50:34.7174171+03:30 0HMEK2843H5PJ:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:50:34.7264023+03:30 0HMEK2843H5PJ:00000005 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType0`5[[webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2022-01-10T11:50:34.7609877+03:30 0HMEK2843H5PJ:00000005 [INF] Executed action "webApp.Controllers.ObjectController.GetP (webApp)" in 49.9728ms (afa2e885)
+2022-01-10T11:50:34.7613128+03:30 0HMEK2843H5PJ:00000005 [INF] Executed endpoint '"webApp.Controllers.ObjectController.GetP (webApp)"' (99874f2b)
+2022-01-10T11:50:34.7623388+03:30 0HMEK2843H5PJ:00000005 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/15 application/json 209 - 200 - application/json;+charset=utf-8 51.9240ms (791a596a)
+2022-01-10T11:50:39.3996943+03:30 0HMEK2843H5PJ:00000006 [INF] Request starting HTTP/1.1 GET https://localhost:7081/api/Object/1 application/json 209 (ca22a1cb)
+2022-01-10T11:50:39.3999983+03:30 0HMEK2843H5PJ:00000006 [INF] Executing endpoint '"webApp.Controllers.ObjectController.GetP (webApp)"' (500cc934)
+2022-01-10T11:50:39.4001629+03:30 0HMEK2843H5PJ:00000006 [INF] Route matched with "{action = \"GetP\", controller = \"Object\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GetP(Int32)" on controller "webApp.Controllers.ObjectController" ("webApp"). (122b2fdf)
+2022-01-10T11:50:39.4020905+03:30 0HMEK2843H5PJ:00000006 [INF] Entity Framework Core "6.0.1" initialized '"ShopContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"6.0.1"' with options: "None" (d2805559)
+2022-01-10T11:50:39.4038084+03:30 0HMEK2843H5PJ:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM \"Objects\" AS \"o\"" (0723d8ff)
+2022-01-10T11:50:39.4055489+03:30 0HMEK2843H5PJ:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"ObjectID\", \"t\".\"AttributeID\", \"t\".\"BrandID\", \"t\".\"SubCategoriID\", \"t\".\"description\", \"t\".\"discount\", \"t\".\"image\", \"t\".\"price\", \"t\".\"title\", \"s\".\"SubCategoriID\", \"s\".\"CategoriID\", \"s\".\"image\", \"s\".\"title\", \"a\".\"AttributeID\", \"a\".\"datas\", \"a\".\"titles\"
+FROM (
+    SELECT \"o\".\"ObjectID\", \"o\".\"AttributeID\", \"o\".\"BrandID\", \"o\".\"SubCategoriID\", \"o\".\"description\", \"o\".\"discount\", \"o\".\"image\", \"o\".\"price\", \"o\".\"title\"
+    FROM \"Objects\" AS \"o\"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS \"t\"
+INNER JOIN \"SubCategoris\" AS \"s\" ON \"t\".\"SubCategoriID\" = \"s\".\"SubCategoriID\"
+LEFT JOIN \"Attributes\" AS \"a\" ON \"t\".\"AttributeID\" = \"a\".\"AttributeID\"" (0723d8ff)
+2022-01-10T11:50:39.4087451+03:30 0HMEK2843H5PJ:00000006 [INF] Executing JsonResult, writing value of type '"<>f__AnonymousType0`5[[webApp.Manager.PaginatedList`1[[webApp.Models.Object, webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], webApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (2f513669)
+2022-01-10T11:50:39.4115798+03:30 0HMEK2843H5PJ:00000006 [INF] Executed action "webApp.Controllers.ObjectController.GetP (webApp)" in 11.2992ms (afa2e885)
+2022-01-10T11:50:39.4116606+03:30 0HMEK2843H5PJ:00000006 [INF] Executed endpoint '"webApp.Controllers.ObjectController.GetP (webApp)"' (99874f2b)
+2022-01-10T11:50:39.4118159+03:30 0HMEK2843H5PJ:00000006 [INF] Request finished HTTP/1.1 GET https://localhost:7081/api/Object/1 application/json 209 - 200 - application/json;+charset=utf-8 12.1407ms (791a596a)
+2022-01-10T11:51:09.2316663+03:30  [INF] Application is shutting down... (90f52c38)

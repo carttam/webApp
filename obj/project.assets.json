@@ -4155,11 +4155,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/run/media/nop/F83652F73652B5FA/Projects/webApp/webApp.csproj",
+      "projectUniqueName": "/run/media/nop/D/Projects/webApp/webApp.csproj",
       "projectName": "webApp",
-      "projectPath": "/run/media/nop/F83652F73652B5FA/Projects/webApp/webApp.csproj",
+      "projectPath": "/run/media/nop/D/Projects/webApp/webApp.csproj",
       "packagesPath": "/home/nop/.nuget/packages/",
-      "outputPath": "/run/media/nop/F83652F73652B5FA/Projects/webApp/obj/",
+      "outputPath": "/run/media/nop/D/Projects/webApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/nop/.nuget/NuGet/NuGet.Config"
