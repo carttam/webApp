@@ -6,10 +6,12 @@ namespace webApp.Manager
     {
         public int PageIndex { get; private set; }
         public int TotalPages { get; private set; }
+        public int TotalCount { get; private set; }
 
         public PaginatedList(List<T> items, int count, int pageIndex, int pageSize)
         {
             PageIndex = pageIndex;
+            TotalCount = count;
             TotalPages = (int)Math.Ceiling(count / (double)pageSize);
 
             this.AddRange(items);

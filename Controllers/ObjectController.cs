@@ -49,6 +49,7 @@ namespace webApp.Controllers
                 hasNext = paginatedList.HasNextPage,
                 hasPrev = paginatedList.HasPreviousPage,
                 totalPAge = paginatedList.TotalPages,
+                totalCount = paginatedList.TotalCount
             });
         }
 
